@@ -16,4 +16,4 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://lovely-arithmetic-8814ed.netlify.app/sitemap.xml
+Sitemap: https://soulcue.org/sitemap.xml
