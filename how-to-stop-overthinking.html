@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Stop Overthinking │ SoulCue</title>
+  <meta name="description" content="Stuck in your head? Learn why overthinking happens and 5 practical ways to break the loop — including how a daily journaling habit helps.">
+  <meta property="og:title" content="How to Stop Overthinking: Practical Techniques That Actually Work">
+  <meta property="og:description" content="Stuck in your head? Learn why overthinking happens and 5 practical ways to break the loop.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script>
+    function trackDownload(location) {
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'app_store_click', { 'event_category': 'conversion', 'event_label': location });
+      }
+    }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --purple: #7B3FE4; --purple-light: #EDE9FF; --purple-dark: #5a2db0;
+      --bg-blue: #E8F4F8; --text-primary: #1A1A1A; --text-secondary: #444;
+    }
+    body { font-family: 'DM Sans', sans-serif; color: var(--text-primary); background: #fff; }
+
+    
+    /* NAV */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      padding: 0 40px;
+      height: 64px;
+      display: flex; align-items: center; justify-content: space-between;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(123,63,228,0.08);
+      gap: 32px;
+    }
+    .nav-logo {
+      font-family: 'DM Serif Display', serif;
+      font-size: 22px; color: #7B3FE4; text-decoration: none;
+      display: flex; align-items: center; gap: 8px; flex-shrink: 0;
+    }
+    .nav-links { display: flex; gap: 4px; align-items: center; flex: 1; }
+    .nav-links a {
+      text-decoration: none; color: #444; font-size: 14px; font-weight: 500;
+      padding: 8px 14px; border-radius: 8px;
+      transition: background 0.15s, color 0.15s; white-space: nowrap;
+    }
+    .nav-links a:hover { background: #F5F5F5; color: #1A1A1A; }
+    .nav-links a.active { color: #7B3FE4; background: #EDE9FF; }
+    .active-article { color: #7B3FE4 !important; }
+
+    /* Dropdown */
+    .nav-dropdown { position: relative; }
+    .nav-dropdown-btn {
+      display: flex; align-items: center; gap: 6px;
+      text-decoration: none; color: #444; font-size: 14px; font-weight: 500;
+      padding: 8px 14px; border-radius: 8px; cursor: pointer;
+      transition: background 0.15s, color 0.15s; white-space: nowrap;
+      background: none; border: none; font-family: 'DM Sans', sans-serif;
+    }
+    .nav-dropdown-btn:hover { background: #F5F5F5; color: #1A1A1A; }
+    .nav-dropdown-btn svg { transition: transform 0.2s; }
+    .nav-dropdown:hover .nav-dropdown-btn svg { transform: rotate(180deg); }
+    .nav-dropdown-menu {
+      display: none; position: absolute; top: calc(100% + 8px); left: 0;
+      background: white; border-radius: 16px;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.12); border: 1px solid rgba(0,0,0,0.06);
+      min-width: 260px; padding: 8px; z-index: 200;
+    }
+    .nav-dropdown:hover .nav-dropdown-menu { display: block; }
+    .nav-dropdown-menu a {
+      display: flex; flex-direction: column; gap: 2px;
+      padding: 12px 16px; border-radius: 10px;
+      text-decoration: none; color: #1A1A1A;
+      transition: background 0.15s;
+    }
+    .nav-dropdown-menu a:hover { background: #F5F5F5; }
+    .nav-dropdown-menu a span { font-size: 14px; font-weight: 500; color: #1A1A1A; }
+    .nav-dropdown-menu a small { font-size: 12px; color: #888; }
+
+    .nav-cta {
+      background: #7B3FE4; color: white;
+      padding: 10px 22px; border-radius: 50px;
+      text-decoration: none; font-weight: 500; font-size: 14px;
+      white-space: nowrap; flex-shrink: 0;
+      transition: background 0.2s;
+    }
+    .nav-cta:hover { background: #5a2db0; }
+    .nav-burger { display: none; background: none; border: none; font-size: 22px; cursor: pointer; }
+
+    @media (max-width: 768px) {
+      nav { padding: 0 20px; }
+      .nav-links, .nav-dropdown { display: none; }
+      .nav-links.open { display: flex; position: fixed; top: 64px; left: 0; right: 0;
+        background: white; flex-direction: column; padding: 12px; gap: 4px;
+        border-bottom: 1px solid #eee; z-index: 99; box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+      .nav-links.open .nav-dropdown { display: block; }
+      .nav-dropdown-menu { position: static; box-shadow: none; border: none; background: #F9F9F9; border-radius: 10px; }
+      .nav-burger { display: block; }
+    }
+
+    /* ARTICLE */
+    .article-hero { background: linear-gradient(160deg, var(--bg-blue) 0%, #f0e8ff 60%, #fff 100%); padding: 120px 40px 60px; text-align: center; }
+    .article-tag { display: inline-block; background: var(--purple-light); color: var(--purple); padding: 6px 16px; border-radius: 50px; font-size: 13px; font-weight: 500; margin-bottom: 20px; }
+    .article-hero h1 { font-family: 'DM Serif Display', serif; font-size: clamp(32px, 5vw, 52px); line-height: 1.15; max-width: 760px; margin: 0 auto 20px; }
+    .article-meta { font-size: 14px; color: #888; margin-bottom: 0; }
+
+    .article-body { max-width: 720px; margin: 0 auto; padding: 60px 40px 80px; }
+    .article-body p { font-size: 17px; line-height: 1.8; color: #333; margin-bottom: 24px; }
+    .article-body h2 { font-family: 'DM Serif Display', serif; font-size: 28px; margin: 48px 0 16px; color: var(--text-primary); }
+    .article-body h3 { font-size: 19px; font-weight: 600; margin: 32px 0 12px; }
+    .article-body ul { margin: 0 0 24px 0; padding-left: 24px; }
+    .article-body ul li { font-size: 17px; line-height: 1.8; color: #333; margin-bottom: 8px; }
+    .article-body strong { color: var(--text-primary); }
+
+    /* App callout */
+    .app-callout { background: var(--purple-light); border-left: 4px solid var(--purple); border-radius: 0 16px 16px 0; padding: 24px 28px; margin: 40px 0; }
+    .app-callout p { margin: 0; font-size: 16px; color: #333; }
+    .app-callout a { color: var(--purple); font-weight: 600; text-decoration: none; }
+    .app-callout a:hover { text-decoration: underline; }
+
+    /* CTA Box */
+    .cta-box { background: linear-gradient(135deg, var(--purple) 0%, #4a1db0 100%); border-radius: 24px; padding: 48px 40px; text-align: center; margin: 60px 0 0; }
+    .cta-box h2 { font-family: 'DM Serif Display', serif; font-size: 32px; color: white; margin-bottom: 12px; }
+    .cta-box p { font-size: 17px; color: rgba(255,255,255,0.85); margin-bottom: 32px; }
+    .btn-white { display: inline-flex; align-items: center; gap: 10px; background: white; color: var(--purple); padding: 16px 36px; border-radius: 50px; text-decoration: none; font-weight: 600; font-size: 17px; box-shadow: 0 8px 32px rgba(0,0,0,0.15); }
+
+    /* Related */
+    .related { background: #F5F5F5; padding: 60px 40px; }
+    .related-inner { max-width: 720px; margin: 0 auto; }
+    .related h3 { font-family: 'DM Serif Display', serif; font-size: 24px; margin-bottom: 24px; }
+    .related-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .related-card { background: white; border-radius: 16px; padding: 24px; text-decoration: none; color: inherit; box-shadow: 0 2px 12px rgba(0,0,0,0.06); transition: transform 0.2s; }
+    .related-card:hover { transform: translateY(-2px); }
+    .related-card span { font-size: 12px; color: var(--purple); font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; }
+    .related-card h4 { font-size: 16px; font-weight: 600; margin-top: 8px; line-height: 1.4; }
+
+    /* Footer */
+    footer { background: #1A1A1A; color: rgba(255,255,255,0.5); padding: 32px 40px; text-align: center; font-size: 14px; }
+    footer a { color: #EDE9FF; text-decoration: none; }
+
+    @media (max-width: 640px) {
+      .article-hero { padding: 100px 20px 48px; }
+      .article-body { padding: 40px 20px 60px; }
+      .related { padding: 40px 20px; }
+      .related-grid { grid-template-columns: 1fr; }
+      .cta-box { padding: 36px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">SoulCue</a>
+  <div class="nav-links" id="navLinks">
+    <a href="/">Home</a>
+    <div class="nav-dropdown">
+      <button class="nav-dropdown-btn">
+        Articles
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="nav-dropdown-menu">
+        <a href="/how-to-stop-overthinking.html" class="active-article">
+          <span>How to Stop Overthinking</span>
+          <small>5 practical techniques that actually work</small>
+        </a>
+        <a href="/how-to-deal-with-anxiety.html">
+          <span>How to Deal with Anxiety</span>
+          <small>What actually helps when anxiety hits</small>
+        </a>
+        <a href="/how-to-process-emotions.html">
+          <span>How to Process Emotions</span>
+          <small>Without getting stuck in the loop</small>
+        </a>
+        <a href="/emotional-regulation-techniques.html">
+          <span>Emotional Regulation Techniques</span>
+          <small>Science-backed tools for daily use</small>
+        </a>
+        <a href="/emotional-triggers.html">
+          <span>Emotional Triggers</span>
+          <small>What they are and how to work with them</small>
+        </a>
+        <a href="/mood-journal-app.html">
+          <span>Mood Journal App</span>
+          <small>Track your emotions, see your growth</small>
+        </a>
+      </div>
+    </div>
+  </div>
+  <a href="https://apps.apple.com/us/app/soulcue-ai-growth-coach/id6754840010?utm_source=website&utm_medium=nav&utm_campaign=download" class="nav-cta" onclick="trackDownload('nav')" target="_blank" rel="noopener">Download Free</a>
+  <button class="nav-burger" onclick="document.getElementById('navLinks').classList.toggle('open')">☰</button>
+</nav>
+
+<div class="article-hero">
+  <div class="article-tag">Mental Wellness</div>
+  <h1>How to Stop Overthinking: Practical Techniques That Actually Work</h1>
+  <p class="article-meta">5 min read · SoulCue Team</p>
+</div>
+
+<div class="article-body">
+
+  <p>How to stop overthinking — it's one of the most searched questions about mental health in the US, and for good reason. If you've ever lain awake at 2am replaying a conversation, or spent an entire day second-guessing a decision you already made, you know how exhausting it gets. The thoughts just won't stop.</p>
+
+  <p>The good news: overthinking isn't a character flaw. It's a habit your brain learned — usually for a reason. And habits can be changed. Here are five practical techniques that actually interrupt the loop.</p>
+
+  <h2>1. Why Your Brain Overthinks (And It's Not Your Fault)</h2>
+
+  <p>Your brain is wired to solve problems. That's a good thing — most of the time. But when there's no clear solution, or when the "problem" is an emotion rather than a task, your brain can get stuck in a loop. It keeps scanning, analyzing, replaying — because that's what it thinks you need.</p>
+
+  <p>Overthinking often spikes during:</p>
+  <ul>
+    <li>Times of uncertainty (new job, relationship changes, big decisions)</li>
+    <li>Moments after social interactions ("Did I say something weird?")</li>
+    <li>Late at night when distractions disappear</li>
+    <li>After conflict or criticism</li>
+  </ul>
+
+  <p>Recognizing this pattern is the first step. Your brain isn't broken — it's trying to protect you. It just needs a different signal.</p>
+
+  <h2>2. The 5-Minute Rule: Interrupt the Loop</h2>
+
+  <p>When you catch yourself overthinking, set a timer for 5 minutes. During that time, you're allowed to think about the problem — really think about it, write it down, turn it over. When the timer goes off, you stop.</p>
+
+  <p>This works because it gives your brain what it wants (to process) while putting a boundary around it. You're not suppressing the thought — you're containing it. Over time, your brain learns that the loop has an endpoint.</p>
+
+  <p><strong>Variation:</strong> Write your thoughts during those 5 minutes. Getting them out of your head and onto paper (or a screen) breaks the internal loop faster than just thinking.</p>
+
+  <h2>3. Name the Emotion Behind the Thought</h2>
+
+  <p>Most overthinking isn't really about the thing you're thinking about. It's about an emotion underneath it — fear, embarrassment, grief, uncertainty. The thought is just the brain's way of trying to process that feeling.</p>
+
+  <p>Ask yourself: <em>What am I actually feeling right now?</em> Not "what am I thinking" — but feeling. Anxious? Hurt? Disappointed? Scared?</p>
+
+  <p>Naming the emotion activates the prefrontal cortex — the rational part of your brain — and quiets the amygdala, which drives emotional reactivity. This is sometimes called "name it to tame it," and it's backed by research in emotional regulation.</p>
+
+  <div class="app-callout">
+    <p>💡 <strong>Try this in SoulCue:</strong> The daily check-in asks you to name your emotion using specific tags — Anxious, Overwhelmed, Restless, and more. <a href="https://apps.apple.com/us/app/soulcue-ai-growth-coach/id6754840010?utm_source=article&utm_medium=inline&utm_campaign=overthinking" onclick="trackDownload('article-inline')" target="_blank">It takes about 2 minutes</a>, and doing it every day trains your brain to identify feelings faster — before the spiral starts.</p>
+  </div>
+
+  <h2>4. Write It Out — Why Journaling Breaks Overthinking</h2>
+
+  <p>There's a reason journaling shows up in almost every evidence-based approach to anxiety and overthinking. Writing externalizes thoughts — it moves them from the infinite, looping space of your mind into a finite, containable form.</p>
+
+  <p>You don't need to write beautifully or even coherently. Just get it out:</p>
+  <ul>
+    <li>What's the thought that keeps coming back?</li>
+    <li>What's the worst case I'm actually afraid of?</li>
+    <li>What do I know for certain right now?</li>
+    <li>What's one thing I can do today?</li>
+  </ul>
+
+  <p>Even three minutes of unstructured writing can significantly reduce the intensity of an overthinking episode. The key is doing it consistently — not just when things feel bad.</p>
+
+  <h2>5. Build a Daily Check-In Habit</h2>
+
+  <p>The most effective way to stop overthinking isn't to fight it when it happens — it's to build a daily practice that catches it early. A consistent check-in habit gives your brain a regular outlet, so thoughts don't accumulate until they overflow.</p>
+
+  <p>This doesn't need to be a 30-minute journaling session. Even a 2-minute daily check-in — <em>how am I feeling today, and why?</em> — changes the pattern over time. You start to notice your emotional state earlier. You catch the spiral before it starts. You build the habit of processing instead of suppressing.</p>
+
+  <p>The goal isn't to stop having thoughts. It's to have a healthier relationship with them.</p>
+
+  <h2>What to Do When Nothing Seems to Work</h2>
+
+  <p>Some days the loop is stronger than any technique. That's normal. On those days, the best thing you can do is change your physical state: go for a walk, splash cold water on your face, do 10 deep slow breaths. Your nervous system responds to the body before it responds to the mind.</p>
+
+  <p>If overthinking is chronic and significantly affecting your daily life, speaking with a therapist can help. SoulCue is a daily practice tool — it's not a replacement for professional support when you need it.</p>
+
+  <div class="cta-box">
+    <h2>Ready to quiet your mind?</h2>
+    <p>Start a daily check-in habit with SoulCue. Takes 2 minutes. Free to start.</p>
+    <a href="https://apps.apple.com/us/app/soulcue-ai-growth-coach/id6754840010?utm_source=article&utm_medium=cta&utm_campaign=overthinking" class="btn-white" onclick="trackDownload('article-cta')" target="_blank" rel="noopener">
+      Download SoulCue — Free
+    </a>
+  </div>
+
+</div>
+
+<div class="related">
+  <div class="related-inner">
+    <h3>Keep reading</h3>
+    <div class="related-grid">
+      <a href="/how-to-deal-with-anxiety.html" class="related-card">
+        <span>Mental Wellness</span>
+        <h4>How to Deal with Anxiety: What Actually Helps</h4>
+      </a>
+      <a href="/how-to-process-emotions.html" class="related-card">
+        <span>Emotional Health</span>
+        <h4>How to Process Emotions Without Getting Stuck</h4>
+      </a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 SoulCue. Made with care. &nbsp;·&nbsp; <a href="/">Home</a> &nbsp;·&nbsp; <a href="#">Privacy</a> &nbsp;·&nbsp; <a href="#">Terms</a></p>
+</footer>
+
+</body>
+</html>
