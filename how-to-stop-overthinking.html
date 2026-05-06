@@ -220,6 +220,7 @@
     ]
   }
   </script>
+  <link rel="canonical" href="https://soulcue.org/how-to-stop-overthinking.html">
 </head>
 <body>
 
@@ -392,5 +393,26 @@
   <p>© 2026 SoulCue. Made with care. &nbsp;·&nbsp; <a href="/">Home</a> &nbsp;·&nbsp; <a href="#">Privacy</a> &nbsp;·&nbsp; <a href="#">Terms</a></p>
 </footer>
 
+
+  <!-- Download Click Tracking -->
+  <script>
+    document.addEventListener('click', function(e) {
+      var link = e.target.closest('a');
+      if (!link) return;
+      if (link.href && link.href.includes('apps.apple.com')) {
+        var location = link.getAttribute('data-track') || 
+                       link.className.includes('nav-cta') ? 'nav' :
+                       link.className.includes('btn-white') ? 'cta' :
+                       link.className.includes('btn-primary') ? 'hero' : 'unknown';
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'app_store_click', {
+            'event_category': 'conversion',
+            'event_label': location,
+            'value': 1
+          });
+        }
+      }
+    });
+  </script>
 </body>
 </html>

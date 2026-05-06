@@ -69,6 +69,7 @@
     footer { background: #1A1A1A; color: rgba(255,255,255,0.5); padding: 32px 40px; text-align: center; font-size: 14px; }
     footer a { color: #EDE9FF; text-decoration: none; }
     @media (max-width: 640px) { .article-hero { padding: 100px 20px 48px; } .article-body { padding: 40px 20px 60px; } .related { padding: 40px 20px; } .related-grid { grid-template-columns: 1fr; } .cta-box { padding: 36px 24px; } .faq-section { padding: 48px 20px; } }</style>
+  <link rel="canonical" href="https://soulcue.org/emotional-triggers.html">
 </head>
 <body>
 <nav>
@@ -124,4 +125,25 @@
   <a href="/how-to-deal-with-anxiety.html" class="related-card"><span>Anxiety</span><h4>How to Deal with Anxiety</h4></a>
   <a href="/overthinking-test.html" class="related-card"><span>Free Test</span><h4>Are You an Overthinker?</h4></a></div></div></div>
 <footer><p>© 2026 SoulCue. &nbsp;·&nbsp; <a href="/">Home</a> &nbsp;·&nbsp; <a href="/guides.html">Guides</a> &nbsp;·&nbsp; <a href="#">Privacy</a></p></footer>
+
+  <!-- Download Click Tracking -->
+  <script>
+    document.addEventListener('click', function(e) {
+      var link = e.target.closest('a');
+      if (!link) return;
+      if (link.href && link.href.includes('apps.apple.com')) {
+        var location = link.getAttribute('data-track') || 
+                       link.className.includes('nav-cta') ? 'nav' :
+                       link.className.includes('btn-white') ? 'cta' :
+                       link.className.includes('btn-primary') ? 'hero' : 'unknown';
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'app_store_click', {
+            'event_category': 'conversion',
+            'event_label': location,
+            'value': 1
+          });
+        }
+      }
+    });
+  </script>
 </body></html>

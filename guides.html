@@ -79,6 +79,17 @@
     @media (max-width: 900px) { .guides-grid { grid-template-columns: repeat(2, 1fr); } .featured-card { grid-column: span 2; } .featured-visual { display: none; } }
     @media (max-width: 640px) { .guides-hero { padding: 100px 20px 48px; } .guides-body { padding: 48px 20px 60px; } .guides-grid { grid-template-columns: 1fr; } .featured-card { grid-column: span 1; grid-template-columns: 1fr; } .cta-banner { flex-direction: column; padding: 32px 24px; } }
   </style>
+  <link rel="canonical" href="https://soulcue.org/guides.html">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Guides — SoulCue Emotional Wellness Articles",
+    "description": "Practical guides on overthinking, anxiety, emotional regulation and mood tracking.",
+    "url": "https://soulcue.org/guides.html",
+    "author": {"@type": "Organization", "name": "SoulCue"}
+  }
+  </script>
 </head>
 <body>
 
@@ -186,5 +197,26 @@
   <p>© 2026 SoulCue. Made with care. &nbsp;·&nbsp; <a href="/">Home</a> &nbsp;·&nbsp; <a href="#">Privacy</a> &nbsp;·&nbsp; <a href="#">Terms</a></p>
 </footer>
 
+
+  <!-- Download Click Tracking -->
+  <script>
+    document.addEventListener('click', function(e) {
+      var link = e.target.closest('a');
+      if (!link) return;
+      if (link.href && link.href.includes('apps.apple.com')) {
+        var location = link.getAttribute('data-track') || 
+                       link.className.includes('nav-cta') ? 'nav' :
+                       link.className.includes('btn-white') ? 'cta' :
+                       link.className.includes('btn-primary') ? 'hero' : 'unknown';
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'app_store_click', {
+            'event_category': 'conversion',
+            'event_label': location,
+            'value': 1
+          });
+        }
+      }
+    });
+  </script>
 </body>
 </html>
