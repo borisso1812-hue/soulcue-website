@@ -1,3 +1,22 @@
+# Force HTTPS and non-www
+[[redirects]]
+  from = "http://www.soulcue.org/*"
+  to = "https://soulcue.org/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.soulcue.org/*"
+  to = "https://soulcue.org/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://soulcue.org/*"
+  to = "https://soulcue.org/:splat"
+  status = 301
+  force = true
+
 [[headers]]
   for = "/images/*"
   [headers.values]
