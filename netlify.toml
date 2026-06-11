@@ -88,6 +88,11 @@
   to = "/about.html"
   status = 301
 
+[[redirects]]
+  from = "/how-to-build-emotional-resilience"
+  to = "/how-to-build-emotional-resilience.html"
+  status = 301
+
 [[headers]]
   for = "/images/*"
   [headers.values]
