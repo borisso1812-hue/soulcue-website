@@ -93,6 +93,11 @@
   to = "/how-to-build-emotional-resilience.html"
   status = 301
 
+[[redirects]]
+  from = "/self-care-ideas-for-mental-health"
+  to = "/self-care-ideas-for-mental-health.html"
+  status = 301
+
 [[headers]]
   for = "/images/*"
   [headers.values]
