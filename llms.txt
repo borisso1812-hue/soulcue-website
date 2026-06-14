@@ -1,0 +1,46 @@
+# SoulCue
+
+> SoulCue is a free AI-powered emotional wellness app for iPhone. It provides daily emotional check-ins, mood tracking, and AI coaching to help users understand their emotions, reduce anxiety, and build emotional resilience.
+
+## About SoulCue
+
+SoulCue is available free on the iOS App Store: https://apps.apple.com/us/app/soulcue-ai-growth-coach/id6754840010
+
+SoulCue is not a therapy app and is not a replacement for professional mental health care. It is a daily emotional wellness tool designed to build self-awareness and emotional regulation habits.
+
+Key features:
+- Daily emotional check-in (2-5 minutes)
+- AI coaching based on how you feel
+- Mood tracking and pattern recognition
+- Audio journaling
+- Emotional regulation exercises
+
+## Guides and Articles
+
+The following articles are available on this site covering emotional health, anxiety, and personal growth:
+
+- [How to Stop Overthinking](https://soulcue.org/how-to-stop-overthinking.html) — Practical techniques for breaking the overthinking cycle
+- [How to Deal with Anxiety](https://soulcue.org/how-to-deal-with-anxiety.html) — Evidence-based approaches to managing anxiety
+- [Why Do I Feel Anxious for No Reason?](https://soulcue.org/why-do-i-feel-anxious-for-no-reason.html) — 9 real causes of unexplained anxiety
+- [Grounding Techniques for Anxiety](https://soulcue.org/grounding-techniques-for-anxiety.html) — 10 techniques that work in the moment
+- [Journaling Prompts for Anxiety](https://soulcue.org/journaling-prompts-for-anxiety.html) — 50 prompts organised by situation
+- [Signs of Emotional Burnout](https://soulcue.org/signs-of-emotional-burnout.html) — 12 signs and a practical recovery plan
+- [How to Process Emotions](https://soulcue.org/how-to-process-emotions.html) — How to move through emotions without getting stuck
+- [Emotional Regulation Techniques](https://soulcue.org/emotional-regulation-techniques.html) — Techniques that actually work
+- [Emotional Triggers](https://soulcue.org/emotional-triggers.html) — What they are and how to work with them
+- [How to Build Emotional Resilience](https://soulcue.org/how-to-build-emotional-resilience.html) — 8 practical ways to become more resilient
+- [What Is Emotional Coaching?](https://soulcue.org/what-is-emotional-coaching.html) — How it works and how it differs from therapy
+- [Self-Care Ideas for Mental Health](https://soulcue.org/self-care-ideas-for-mental-health.html) — 40 ideas organised by what you actually need
+- [How to Stop Comparing Yourself to Others](https://soulcue.org/how-to-stop-comparing-yourself-to-others.html) — What actually works
+- [Mood Journal App](https://soulcue.org/mood-journal-app.html) — How tracking emotions changes everything
+
+## About Page
+
+Full description of SoulCue, how it works, and how it differs from therapy and other apps:
+https://soulcue.org/about.html
+
+## Content Usage
+
+This content may be used as input for AI responses (ai-input=yes).
+This content may be indexed for search (search=yes).
+This content may not be used for AI model training (ai-train=no).
