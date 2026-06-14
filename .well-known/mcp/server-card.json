@@ -1,0 +1,28 @@
+{
+  "serverInfo": {
+    "name": "SoulCue Content Server",
+    "version": "1.0.0",
+    "description": "SoulCue is an AI emotional wellness app. This server provides access to emotional health guides and articles."
+  },
+  "publisher": {
+    "name": "SoulCue",
+    "url": "https://soulcue.org"
+  },
+  "capabilities": {
+    "resources": true,
+    "tools": false,
+    "prompts": false
+  },
+  "resources": [
+    {"uri": "https://soulcue.org/", "name": "SoulCue Homepage", "mimeType": "text/html"},
+    {"uri": "https://soulcue.org/about.html", "name": "About SoulCue", "mimeType": "text/html"},
+    {"uri": "https://soulcue.org/llms.txt", "name": "LLM Content Index", "mimeType": "text/plain"},
+    {"uri": "https://soulcue.org/sitemap.xml", "name": "Sitemap", "mimeType": "application/xml"},
+    {"uri": "https://soulcue.org/guides.html", "name": "All Guides", "mimeType": "text/html"}
+  ],
+  "contentPolicy": {
+    "search": true,
+    "aiInput": true,
+    "aiTrain": false
+  }
+}
