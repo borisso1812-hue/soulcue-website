@@ -1,0 +1,28 @@
+{
+  "$schema": "https://agentskills.io/schema/v0.2.0/index.json",
+  "name": "SoulCue Agent Skills",
+  "description": "Skills and resources available from soulcue.org for AI agent discovery",
+  "skills": [
+    {
+      "name": "content-index",
+      "type": "resource",
+      "description": "LLMs.txt content index listing all articles and guides on soulcue.org",
+      "url": "https://soulcue.org/llms.txt",
+      "sha256": "f43a9e2f7da89777ca234fc2f236252b27a44652586c9514b243e81bf1b19114"
+    },
+    {
+      "name": "sitemap",
+      "type": "resource",
+      "description": "XML sitemap of all pages on soulcue.org",
+      "url": "https://soulcue.org/sitemap.xml",
+      "sha256": "ab0948979d8a429a3b73069f8d557801277b33d41cdec22352c1aadc1460266d"
+    },
+    {
+      "name": "about",
+      "type": "resource",
+      "description": "About page describing what SoulCue is, how it works, and who it is for",
+      "url": "https://soulcue.org/about.html",
+      "sha256": "2212b84a2a6ffe239872c76d266680d86f2438391034b2eb19604f17104f6968"
+    }
+  ]
+}
