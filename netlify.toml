@@ -1,3 +1,15 @@
+# Link headers for AI agent discovery (RFC 8288)
+[[headers]]
+  for = "/"
+  [headers.values]
+    Link = "</about.html>; rel=\"about\", </sitemap.xml>; rel=\"sitemap\""
+    X-Robots-Tag = "index, follow"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    X-Robots-Tag = "index, follow"
+
 # Force HTTPS and non-www
 [[redirects]]
   from = "http://www.soulcue.org/*"
