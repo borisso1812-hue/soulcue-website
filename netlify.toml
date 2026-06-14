@@ -2,7 +2,7 @@
 [[headers]]
   for = "/"
   [headers.values]
-    Link = "</about.html>; rel=\"about\", </sitemap.xml>; rel=\"sitemap\""
+    Link = """</.well-known/api-catalog>; rel="api-catalog", </llms.txt>; rel="describedby", </sitemap.xml>; rel="sitemap", </.well-known/mcp/server-card.json>; rel="service-desc""""
     X-Robots-Tag = "index, follow"
 
 [[headers]]
@@ -10,18 +10,38 @@
   [headers.values]
     X-Robots-Tag = "index, follow"
 
-# Force HTTPS and non-www
+[[headers]]
+  for = "/.well-known/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/llms.txt"
+  [headers.values]
+    Content-Type = "text/plain; charset=utf-8"
+    Cache-Control = "public, max-age=3600"
+    Access-Control-Allow-Origin = "*"
+
+[[headers]]
+  for = "/auth.md"
+  [headers.values]
+    Content-Type = "text/markdown; charset=utf-8"
+    Access-Control-Allow-Origin = "*"
+
 [[redirects]]
   from = "http://www.soulcue.org/*"
   to = "https://soulcue.org/:splat"
   status = 301
   force = true
 
+
 [[redirects]]
   from = "https://www.soulcue.org/*"
   to = "https://soulcue.org/:splat"
   status = 301
   force = true
+
 
 [[redirects]]
   from = "http://soulcue.org/*"
@@ -30,90 +50,108 @@
   force = true
 
 # Redirect URLs without .html to .html versions
+
 [[redirects]]
   from = "/journaling-prompts-for-anxiety"
   to = "/journaling-prompts-for-anxiety.html"
   status = 301
+
 
 [[redirects]]
   from = "/why-do-i-feel-anxious-for-no-reason"
   to = "/why-do-i-feel-anxious-for-no-reason.html"
   status = 301
 
+
 [[redirects]]
   from = "/how-to-stop-overthinking"
   to = "/how-to-stop-overthinking.html"
   status = 301
+
 
 [[redirects]]
   from = "/how-to-deal-with-anxiety"
   to = "/how-to-deal-with-anxiety.html"
   status = 301
 
+
 [[redirects]]
   from = "/how-to-process-emotions"
   to = "/how-to-process-emotions.html"
   status = 301
+
 
 [[redirects]]
   from = "/emotional-regulation-techniques"
   to = "/emotional-regulation-techniques.html"
   status = 301
 
+
 [[redirects]]
   from = "/emotional-triggers"
   to = "/emotional-triggers.html"
   status = 301
+
 
 [[redirects]]
   from = "/mood-journal-app"
   to = "/mood-journal-app.html"
   status = 301
 
+
 [[redirects]]
   from = "/signs-of-emotional-burnout"
   to = "/signs-of-emotional-burnout.html"
   status = 301
+
 
 [[redirects]]
   from = "/what-is-emotional-coaching"
   to = "/what-is-emotional-coaching.html"
   status = 301
 
+
 [[redirects]]
   from = "/grounding-techniques-for-anxiety"
   to = "/grounding-techniques-for-anxiety.html"
   status = 301
+
 
 [[redirects]]
   from = "/overthinking-test"
   to = "/overthinking-test.html"
   status = 301
 
+
 [[redirects]]
   from = "/guides"
   to = "/guides.html"
   status = 301
+
 
 [[redirects]]
   from = "/about"
   to = "/about.html"
   status = 301
 
+
 [[redirects]]
   from = "/how-to-build-emotional-resilience"
   to = "/how-to-build-emotional-resilience.html"
   status = 301
+
 
 [[redirects]]
   from = "/self-care-ideas-for-mental-health"
   to = "/self-care-ideas-for-mental-health.html"
   status = 301
 
+
 [[redirects]]
   from = "/how-to-stop-comparing-yourself-to-others"
   to = "/how-to-stop-comparing-yourself-to-others.html"
   status = 301
+
 
 [[headers]]
   for = "/images/*"
@@ -126,6 +164,7 @@
     Cache-Control = "public, max-age=3600, must-revalidate"
     X-Content-Type-Options = "nosniff"
     X-Frame-Options = "SAMEORIGIN"
+    X-Robots-Tag = "index, follow"
 
 [[headers]]
   for = "/sitemap.xml"
