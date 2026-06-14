@@ -98,6 +98,11 @@
   to = "/self-care-ideas-for-mental-health.html"
   status = 301
 
+[[redirects]]
+  from = "/how-to-stop-comparing-yourself-to-others"
+  to = "/how-to-stop-comparing-yourself-to-others.html"
+  status = 301
+
 [[headers]]
   for = "/images/*"
   [headers.values]
