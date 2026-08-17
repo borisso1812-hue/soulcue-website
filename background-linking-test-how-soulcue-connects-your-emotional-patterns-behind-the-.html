@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Analytics GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3N4WH1E76S"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3N4WH1E76S');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Background Linking Test: How SoulCue Connects Your Emotional Patterns Behind the Scenes</title>
+  <meta name="description" content="Discover how SoulCue&#39;s background linking test helps you uncover hidden emotional connections for deeper self-awareness and lasting mental wellness.">
+  <meta property="og:title" content="Background Linking Test: How SoulCue Connects Your Emotional Patterns Behind the Scenes">
+  <meta property="og:description" content="Discover how SoulCue&#39;s background linking test helps you uncover hidden emotional connections for deeper self-awareness and lasting mental wellness.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script>
+    function trackDownload(l) { if(typeof gtag!=='undefined') gtag('event','app_store_click',{'event_label':l}); }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --purple: #7B3FE4; --purple-light: #EDE9FF; --purple-dark: #5a2db0;
+      --bg: #F7F5FF; --text: #1A1A1A; --text-2: #555;
+      --green: #22C55E; --yellow: #F59E0B; --red: #EF4444;
+    }
+    body { font-family: 'DM Sans', sans-serif; color: var(--text); background: #fff; }
+
+    /* NAV */
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 0 40px; height: 64px; display: flex; align-items: center; justify-content: space-between; background: rgba(255,255,255,0.95); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(123,63,228,0.08); gap: 32px; }
+    .nav-logo { font-family: 'DM Serif Display', serif; font-size: 22px; color: var(--purple); text-decoration: none; display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+    .nav-links { display: flex; gap: 4px; align-items: center; flex: 1; }
+    .nav-links a { text-decoration: none; color: #444; font-size: 14px; font-weight: 500; padding: 8px 14px; border-radius: 8px; transition: background 0.15s, color 0.15s; }
+    .nav-links a:hover { background: #F5F5F5; color: #1A1A1A; }
+    .nav-links a.active { color: var(--purple); background: var(--purple-light); }
+    .nav-cta { background: var(--purple); color: white; padding: 10px 22px; border-radius: 50px; text-decoration: none; font-weight: 500; font-size: 14px; white-space: nowrap; flex-shrink: 0; }
+    .nav-burger { display: none; background: none; border: none; font-size: 22px; cursor: pointer; }
+    @media (max-width: 768px) {
+      nav { padding: 0 20px; }
+      .nav-links { display: none; }
+      .nav-links.open { display: flex; position: fixed; top: 64px; left: 0; right: 0; background: white; flex-direction: column; padding: 12px; gap: 4px; border-bottom: 1px solid #eee; z-index: 99; box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+      .nav-burger { display: block; }
+    }
+
+    /* HERO */
+    .quiz-hero {
+      background: linear-gradient(160deg, #f0e8ff 0%, var(--bg) 60%, #fff 100%);
+      padding: 100px 40px 48px;
+      text-align: center;
+    }
+    .quiz-tag { display: inline-block; background: var(--purple-light); color: var(--purple); padding: 6px 16px; border-radius: 50px; font-size: 13px; font-weight: 500; margin-bottom: 20px; }
+    .quiz-hero h1 { font-family: 'DM Serif Display', serif; font-size: clamp(32px, 5vw, 52px); line-height: 1.15; max-width: 680px; margin: 0 auto 16px; }
+    .quiz-hero p { font-size: 17px; color: var(--text-2); max-width: 480px; margin: 0 auto 32px; line-height: 1.7; }
+    .quiz-meta { display: flex; gap: 24px; justify-content: center; font-size: 14px; color: #888; }
+    .quiz-meta span::before { margin-right: 6px; }
+
+    /* QUIZ CONTAINER */
+    .quiz-wrap { max-width: 680px; margin: 0 auto; padding: 48px 40px 80px; }
+
+    /* PROGRESS */
+    .progress-bar-wrap { margin-bottom: 32px; }
+    .progress-label { display: flex; justify-content: space-between; font-size: 13px; color: #888; margin-bottom: 8px; }
+    .progress-bar { height: 6px; background: #E5E7EB; border-radius: 3px; overflow: hidden; }
+    .progress-fill { height: 100%; background: var(--purple); border-radius: 3px; transition: width 0.4s ease; }
+
+    /* QUESTION CARD */
+    .question-card { display: none; animation: fadeIn 0.3s ease; }
+    .question-card.active { display: block; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+
+    .question-num { font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--purple); margin-bottom: 12px; }
+    .question-text { font-family: 'DM Serif Display', serif; font-size: clamp(20px, 3vw, 26px); line-height: 1.3; margin-bottom: 32px; color: var(--text); }
+
+    .options { display: flex; flex-direction: column; gap: 12px; }
+    .option {
+      background: white; border: 2px solid #E5E7EB; border-radius: 16px;
+      padding: 16px 20px; cursor: pointer; font-size: 16px; font-weight: 400;
+      text-align: left; transition: all 0.15s; color: var(--text);
+      display: flex; align-items: center; gap: 12px;
+    }
+    .option:hover { border-color: var(--purple); background: var(--purple-light); }
+    .option.selected { border-color: var(--purple); background: var(--purple-light); color: var(--purple); font-weight: 500; }
+    .option-dot {
+      width: 20px; height: 20px; border-radius: 50%; border: 2px solid #D1D5DB;
+      flex-shrink: 0; transition: all 0.15s;
+    }
+    .option.selected .option-dot { background: var(--purple); border-color: var(--purple); }
+
+    .nav-btns { display: flex; gap: 12px; margin-top: 32px; }
+    .btn-back { background: white; border: 2px solid #E5E7EB; color: #444; padding: 14px 28px; border-radius: 50px; font-size: 15px; font-weight: 500; cursor: pointer; transition: all 0.15s; }
+    .btn-back:hover { border-color: #999; }
+    .btn-next { background: var(--purple); color: white; padding: 14px 36px; border-radius: 50px; font-size: 15px; font-weight: 600; cursor: pointer; border: none; transition: all 0.15s; opacity: 0.4; pointer-events: none; }
+    .btn-next.enabled { opacity: 1; pointer-events: all; }
+    .btn-next.enabled:hover { background: var(--purple-dark); }
+
+    /* RESULT */
+    .result-card { display: none; text-align: center; animation: fadeIn 0.4s ease; }
+    .result-card.active { display: block; }
+    .result-emoji { font-size: 72px; margin-bottom: 16px; }
+    .result-score { font-size: 14px; color: #888; margin-bottom: 8px; }
+    .result-type { font-family: 'DM Serif Display', serif; font-size: clamp(28px, 4vw, 40px); margin-bottom: 16px; color: var(--text); }
+    .result-badge { display: inline-block; padding: 6px 20px; border-radius: 50px; font-size: 13px; font-weight: 600; margin-bottom: 24px; }
+    .badge-low { background: #DCFCE7; color: #16A34A; }
+    .badge-med { background: #FEF9C3; color: #CA8A04; }
+    .badge-high { background: #FEE2E2; color: #DC2626; }
+    .result-desc { font-size: 17px; line-height: 1.8; color: var(--text-2); max-width: 520px; margin: 0 auto 32px; text-align: left; }
+    .result-tips { background: var(--bg); border-radius: 20px; padding: 28px 32px; text-align: left; margin-bottom: 32px; }
+    .result-tips h3 { font-family: 'DM Serif Display', serif; font-size: 20px; margin-bottom: 16px; }
+    .result-tips ul { padding-left: 20px; display: flex; flex-direction: column; gap: 10px; }
+    .result-tips ul li { font-size: 15px; line-height: 1.6; color: var(--text-2); }
+    .result-cta { background: linear-gradient(135deg, var(--purple) 0%, var(--purple-dark) 100%); border-radius: 24px; padding: 40px 32px; margin-top: 8px; }
+    .result-cta h3 { font-family: 'DM Serif Display', serif; font-size: 26px; color: white; margin-bottom: 10px; }
+    .result-cta p { font-size: 16px; color: rgba(255,255,255,0.8); margin-bottom: 24px; }
+    .btn-download { display: inline-flex; align-items: center; gap: 10px; background: white; color: var(--purple); padding: 16px 32px; border-radius: 50px; font-weight: 600; font-size: 16px; text-decoration: none; box-shadow: 0 8px 24px rgba(0,0,0,0.15); }
+    .btn-retake { background: none; border: none; color: rgba(255,255,255,0.7); font-size: 14px; cursor: pointer; margin-top: 16px; display: block; text-align: center; text-decoration: underline; }
+
+    footer { background: #1A1A1A; color: rgba(255,255,255,0.5); padding: 32px 40px; text-align: center; font-size: 14px; }
+    footer a { color: #EDE9FF; text-decoration: none; }
+
+    @media (max-width: 640px) {
+      .quiz-hero { padding: 90px 20px 36px; }
+      .quiz-wrap { padding: 36px 20px 60px; }
+      .result-tips { padding: 20px; }
+      .result-cta { padding: 28px 20px; }
+    }
+  </style>
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Quiz",
+    "name": "Are You an Overthinker? Free Self-Assessment",
+    "description": "Discover how SoulCue's background linking test helps you uncover hidden emotional connections for deeper self-awareness and lasting mental wellness.",
+    "url": "https://soulcue.org/overthinking-test.html",
+    "author": { "@type": "Organization", "name": "SoulCue" },
+    "educationalLevel": "beginner",
+    "about": { "@type": "Thing", "name": "Overthinking" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Am I an overthinker?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You may be an overthinker if you regularly replay conversations, struggle to make decisions, lie awake with racing thoughts, or feel mentally exhausted from worrying. This free 10-question test can help you assess your tendency to overthink and understand what to do about it."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the signs of overthinking?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Signs of overthinking include: replaying past conversations and events, difficulty making decisions, imagining worst-case scenarios, lying awake at night with racing thoughts, second-guessing decisions you have already made, and feeling like your mind has too many tabs open at once."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I stop being an overthinker?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "To reduce overthinking: (1) Name the emotion underneath the thought — anxiety, fear, or uncertainty. (2) Set a daily worry window of 10 minutes so thoughts have an outlet. (3) Write thoughts down to externalize them. (4) Build a daily emotional check-in habit to catch spirals early. (5) Change your physical state with movement or breathing when thoughts intensify."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="canonical" href="https://soulcue.org/background-linking-test-how-soulcue-connects-your-emotional-patterns-behind-the-.html">
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo"><img src="/images/logo.png" style="width:32px;height:32px;border-radius:8px;flex-shrink:0;" alt="SoulCue">SoulCue</a>
+  <div class="nav-links" id="navLinks">
+    <a href="/">Home</a>
+    <a href="/guides.html">Guides</a>
+    <a href="/overthinking-test.html" class="active">Assess Yourself</a>
+  </div>
+  <a href="https://apps.apple.com/us/app/soulcue-ai-growth-coach/id6754840010?utm_source=website&utm_medium=quiz-nav&utm_campaign=download" class="nav-cta" onclick="trackDownload('quiz-nav')" target="_blank" rel="noopener">Download Free</a>
+  <button class="nav-burger" onclick="document.getElementById('navLinks').classList.toggle('open')">☰</button>
+</nav>
+<h1>Background Linking Test: How SoulCue Connects Your Emotional Patterns Behind the Scenes</h1>
+<p>Have you ever wondered why certain situations consistently trigger stress, sadness, or anxiety — even when you can't quite put your finger on the reason? The answer often lies in invisible emotional threads that run through your daily experiences. At SoulCue, we call the process of identifying these threads a <strong>background linking test</strong> — and it's one of the most powerful tools you can use on your self-improvement journey.</p><p>In this article, we'll break down what a background linking test means in the context of emotional wellness, how SoulCue uses this approach to help you grow, and why building this habit today could transform your mental health tomorrow.</p><h2>What Is a Background Linking Test?</h2><p>A background linking test is the practice of examining the underlying connections between your moods, thoughts, behaviors, and life events — often without you actively realizing those links exist. Think of it as running a diagnostic scan on your emotional operating system. Just like a computer runs background processes you never see, your mind continuously processes memories, triggers, and emotional associations beneath the surface of your conscious awareness.</p><p>When you surface these hidden connections, you gain the power to understand <em>why</em> you feel the way you feel — not just <em>what</em> you're feeling. That distinction is everything when it comes to lasting emotional change.</p><h2>Why Background Linking Matters for Emotional Wellness</h2><p>Most people approach emotional wellness reactively. Something goes wrong, they feel bad, and they try to cope in the moment. But true self-improvement requires a proactive strategy — one that identifies patterns before they spiral into recurring problems.</p><p>Research in cognitive behavioral therapy and mindfulness consistently shows that awareness of emotional patterns is a prerequisite for change. When you can link a present-day anxiety response to a background experience or belief system, you're no longer at the mercy of that feeling. You hold the map, which means you can choose a different route.</p><p>A background linking test helps you:</p><ul><li>Identify recurring emotional triggers across different life areas</li><li>Spot behavioral patterns that may be holding you back</li><li>Build a clearer picture of your core emotional needs</li><li>Create targeted strategies for growth rather than generic coping mechanisms</li></ul><h2>How SoulCue Runs Your Personal Background Linking Test</h2><p>SoulCue is designed to be your AI-powered emotional wellness coach, mood journal, and personal tracker — all rolled into one intuitive app. Every time you log a mood entry, reflect on your day, or complete a guided check-in, SoulCue is quietly doing the work of a background linking test on your behalf.</p><p>Here's how it works in practice:</p><p><strong>1. Daily Mood Logging:</strong> Each entry you make feeds into SoulCue's intelligent pattern recognition system. Over time, the app begins to identify which activities, times of day, people, or situations correlate with your highest and lowest emotional states.</p><p><strong>2. AI-Powered Insights:</strong> SoulCue's AI coach analyzes your emotional data and surfaces meaningful connections you might have missed. For example, it might reveal that your stress levels spike every Sunday evening — a classic pre-work anxiety pattern that many people never consciously recognize.</p><p><strong>3. Reflective Prompts:</strong> SoulCue doesn't just tell you what it finds. It guides you through thoughtful prompts that help you explore those connections yourself, making the insight personal and actionable rather than clinical and detached.</p><p><strong>4. Progress Tracking:</strong> As you engage with your emotional patterns over days, weeks, and months, SoulCue tracks your growth. You can see how your responses to certain triggers evolve as your awareness and coping strategies improve.</p><h2>Starting Your Background Linking Practice Today</h2><p>You don't need to be in crisis to benefit from emotional self-awareness. In fact, the best time to start is when life feels relatively stable — because that's when you can observe patterns most clearly, without the noise of acute stress distorting your perspective.</p><p>Here are three simple ways to begin your own background linking test right now:</p><ol><li><strong>Download SoulCue for free</strong> and complete your first mood check-in. Even a single entry starts the process.</li><li><strong>Commit to daily logging for two weeks.</strong> Consistency is the key that unlocks pattern recognition. Seven days isn't enough — fourteen gives the system, and your own mind, enough data to work with.</li><li><strong>Review your weekly insights.</strong> SoulCue delivers a summary of your emotional week, highlighting notable patterns. Read it with curiosity, not judgment.</li></ol><h2>The Bigger Picture: Emotional Awareness as a Life Skill</h2><p>A background linking test isn't a one-time exercise. It's an ongoing practice — a way of relating to your inner life with curiosity and compassion. The more consistently you engage with it, the sharper your emotional intelligence becomes, and the more agency you develop over how you feel and respond in every area of your life.</p><p>SoulCue exists to make this practice simple, accessible, and even enjoyable. Whether you're navigating stress, working through relationship challenges, or simply committed to showing up as your best self, the background linking work you do inside the app compounds over time into real, meaningful transformation.</p><p>Ready to see what your emotional patterns have been trying to tell you? Download SoulCue today — it's free, and your first insight is waiting.</p>
+<footer>
+  <p>© 2026 SoulCue. Made with care. &nbsp;·&nbsp; <a href="/">Home</a> &nbsp;·&nbsp; <a href="/guides.html">Guides</a> &nbsp;·&nbsp; <a href="#">Privacy</a></p>
+  <p style="margin-top:8px;font-size:12px;color:rgba(255,255,255,0.3);">This test is for self-reflection only and is not a clinical diagnosis.</p>
+</footer>
+
+<script>
+  const answers = new Array(10).fill(null);
+  let currentQ = 0;
+
+  function selectOption(btn, score) {
+    const card = btn.closest('.question-card');
+    card.querySelectorAll('.option').forEach(o => o.classList.remove('selected'));
+    btn.classList.add('selected');
+    answers[currentQ] = score;
+    const nextBtn = document.getElementById('nextBtn' + currentQ);
+    if (nextBtn) nextBtn.classList.add('enabled');
+  }
+
+  function nextQuestion(qIndex) {
+    if (answers[qIndex] === null) return;
+    const cards = document.querySelectorAll('.question-card');
+    cards[qIndex].classList.remove('active');
+    currentQ = qIndex + 1;
+    if (currentQ < cards.length) {
+      cards[currentQ].classList.add('active');
+      updateProgress();
+    }
+  }
+
+  function prevQuestion(qIndex) {
+    const cards = document.querySelectorAll('.question-card');
+    cards[qIndex].classList.remove('active');
+    currentQ = qIndex - 1;
+    cards[currentQ].classList.add('active');
+    updateProgress();
+  }
+
+  function updateProgress() {
+    const pct = Math.round((currentQ / 10) * 100);
+    document.getElementById('progressFill').style.width = pct + '%';
+    document.getElementById('progressText').textContent = `Question ${currentQ + 1} of 10`;
+    document.getElementById('progressPct').textContent = pct + '%';
+  }
+
+  function showResult() {
+    if (answers[9] === null) return;
+    const total = answers.reduce((a, b) => a + (b || 0), 0);
+    document.getElementById('quizQuestions').style.display = 'none';
+    document.getElementById('progressWrap').style.display = 'none';
+    document.getElementById('resultSection').style.display = 'block';
+
+    let resultId, scoreText;
+    if (total <= 8) {
+      resultId = 'result-low';
+      scoreText = `Your score: ${total}/30 — Low tendency`;
+    } else if (total <= 18) {
+      resultId = 'result-medium';
+      scoreText = `Your score: ${total}/30 — Moderate tendency`;
+    } else {
+      resultId = 'result-high';
+      scoreText = `Your score: ${total}/30 — High tendency`;
+    }
+
+    document.getElementById('score-' + resultId.split('-')[1]).textContent = scoreText;
+    document.getElementById(resultId).classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+
+    if (typeof gtag !== 'undefined') {
+      gtag('event', 'quiz_completed', { 'event_label': resultId, 'value': total });
+    }
+  }
+
+  function retakeQuiz() {
+    answers.fill(null);
+    currentQ = 0;
+    document.querySelectorAll('.question-card').forEach((c, i) => {
+      c.classList.toggle('active', i === 0);
+      c.querySelectorAll('.option').forEach(o => o.classList.remove('selected'));
+      const btn = document.getElementById('nextBtn' + i);
+      if (btn) btn.classList.remove('enabled');
+    });
+    document.querySelectorAll('.result-card').forEach(r => r.classList.remove('active'));
+    document.getElementById('quizQuestions').style.display = 'block';
+    document.getElementById('progressWrap').style.display = 'block';
+    document.getElementById('resultSection').style.display = 'none';
+    updateProgress();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  document.getElementById('resultSection').style.display = 'none';
+</script>
+
+
+  <!-- Download Click Tracking -->
+  <script>
+    document.addEventListener('click', function(e) {
+      var link = e.target.closest('a');
+      if (!link) return;
+      if (link.href && link.href.includes('apps.apple.com')) {
+        var location = link.getAttribute('data-track') || 
+                       link.className.includes('nav-cta') ? 'nav' :
+                       link.className.includes('btn-white') ? 'cta' :
+                       link.className.includes('btn-primary') ? 'hero' : 'unknown';
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'app_store_click', {
+            'event_category': 'conversion',
+            'event_label': location,
+            'value': 1
+          });
+        }
+      }
+    });
+  </script>
+</body>
+</html>
