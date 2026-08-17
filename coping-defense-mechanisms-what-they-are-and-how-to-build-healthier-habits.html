@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Analytics GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3N4WH1E76S"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3N4WH1E76S');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coping Defense Mechanisms: What They Are and How to Build Healthier Habits</title>
+  <meta name="description" content="Learn what coping defense mechanisms are, how they affect your emotional wellness, and how SoulCue helps you build healthier responses to stress.">
+  <meta property="og:title" content="Coping Defense Mechanisms: What They Are and How to Build Healthier Habits">
+  <meta property="og:description" content="Learn what coping defense mechanisms are, how they affect your emotional wellness, and how SoulCue helps you build healthier responses to stress.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script>
+    function trackDownload(l) { if(typeof gtag!=='undefined') gtag('event','app_store_click',{'event_label':l}); }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --purple: #7B3FE4; --purple-light: #EDE9FF; --purple-dark: #5a2db0;
+      --bg: #F7F5FF; --text: #1A1A1A; --text-2: #555;
+      --green: #22C55E; --yellow: #F59E0B; --red: #EF4444;
+    }
+    body { font-family: 'DM Sans', sans-serif; color: var(--text); background: #fff; }
+
+    /* NAV */
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 0 40px; height: 64px; display: flex; align-items: center; justify-content: space-between; background: rgba(255,255,255,0.95); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(123,63,228,0.08); gap: 32px; }
+    .nav-logo { font-family: 'DM Serif Display', serif; font-size: 22px; color: var(--purple); text-decoration: none; display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+    .nav-links { display: flex; gap: 4px; align-items: center; flex: 1; }
+    .nav-links a { text-decoration: none; color: #444; font-size: 14px; font-weight: 500; padding: 8px 14px; border-radius: 8px; transition: background 0.15s, color 0.15s; }
+    .nav-links a:hover { background: #F5F5F5; color: #1A1A1A; }
+    .nav-links a.active { color: var(--purple); background: var(--purple-light); }
+    .nav-cta { background: var(--purple); color: white; padding: 10px 22px; border-radius: 50px; text-decoration: none; font-weight: 500; font-size: 14px; white-space: nowrap; flex-shrink: 0; }
+    .nav-burger { display: none; background: none; border: none; font-size: 22px; cursor: pointer; }
+    @media (max-width: 768px) {
+      nav { padding: 0 20px; }
+      .nav-links { display: none; }
+      .nav-links.open { display: flex; position: fixed; top: 64px; left: 0; right: 0; background: white; flex-direction: column; padding: 12px; gap: 4px; border-bottom: 1px solid #eee; z-index: 99; box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+      .nav-burger { display: block; }
+    }
+
+    /* HERO */
+    .quiz-hero {
+      background: linear-gradient(160deg, #f0e8ff 0%, var(--bg) 60%, #fff 100%);
+      padding: 100px 40px 48px;
+      text-align: center;
+    }
+    .quiz-tag { display: inline-block; background: var(--purple-light); color: var(--purple); padding: 6px 16px; border-radius: 50px; font-size: 13px; font-weight: 500; margin-bottom: 20px; }
+    .quiz-hero h1 { font-family: 'DM Serif Display', serif; font-size: clamp(32px, 5vw, 52px); line-height: 1.15; max-width: 680px; margin: 0 auto 16px; }
+    .quiz-hero p { font-size: 17px; color: var(--text-2); max-width: 480px; margin: 0 auto 32px; line-height: 1.7; }
+    .quiz-meta { display: flex; gap: 24px; justify-content: center; font-size: 14px; color: #888; }
+    .quiz-meta span::before { margin-right: 6px; }
+
+    /* QUIZ CONTAINER */
+    .quiz-wrap { max-width: 680px; margin: 0 auto; padding: 48px 40px 80px; }
+
+    /* PROGRESS */
+    .progress-bar-wrap { margin-bottom: 32px; }
+    .progress-label { display: flex; justify-content: space-between; font-size: 13px; color: #888; margin-bottom: 8px; }
+    .progress-bar { height: 6px; background: #E5E7EB; border-radius: 3px; overflow: hidden; }
+    .progress-fill { height: 100%; background: var(--purple); border-radius: 3px; transition: width 0.4s ease; }
+
+    /* QUESTION CARD */
+    .question-card { display: none; animation: fadeIn 0.3s ease; }
+    .question-card.active { display: block; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+
+    .question-num { font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--purple); margin-bottom: 12px; }
+    .question-text { font-family: 'DM Serif Display', serif; font-size: clamp(20px, 3vw, 26px); line-height: 1.3; margin-bottom: 32px; color: var(--text); }
+
+    .options { display: flex; flex-direction: column; gap: 12px; }
+    .option {
+      background: white; border: 2px solid #E5E7EB; border-radius: 16px;
+      padding: 16px 20px; cursor: pointer; font-size: 16px; font-weight: 400;
+      text-align: left; transition: all 0.15s; color: var(--text);
+      display: flex; align-items: center; gap: 12px;
+    }
+    .option:hover { border-color: var(--purple); background: var(--purple-light); }
+    .option.selected { border-color: var(--purple); background: var(--purple-light); color: var(--purple); font-weight: 500; }
+    .option-dot {
+      width: 20px; height: 20px; border-radius: 50%; border: 2px solid #D1D5DB;
+      flex-shrink: 0; transition: all 0.15s;
+    }
+    .option.selected .option-dot { background: var(--purple); border-color: var(--purple); }
+
+    .nav-btns { display: flex; gap: 12px; margin-top: 32px; }
+    .btn-back { background: white; border: 2px solid #E5E7EB; color: #444; padding: 14px 28px; border-radius: 50px; font-size: 15px; font-weight: 500; cursor: pointer; transition: all 0.15s; }
+    .btn-back:hover { border-color: #999; }
+    .btn-next { background: var(--purple); color: white; padding: 14px 36px; border-radius: 50px; font-size: 15px; font-weight: 600; cursor: pointer; border: none; transition: all 0.15s; opacity: 0.4; pointer-events: none; }
+    .btn-next.enabled { opacity: 1; pointer-events: all; }
+    .btn-next.enabled:hover { background: var(--purple-dark); }
+
+    /* RESULT */
+    .result-card { display: none; text-align: center; animation: fadeIn 0.4s ease; }
+    .result-card.active { display: block; }
+    .result-emoji { font-size: 72px; margin-bottom: 16px; }
+    .result-score { font-size: 14px; color: #888; margin-bottom: 8px; }
+    .result-type { font-family: 'DM Serif Display', serif; font-size: clamp(28px, 4vw, 40px); margin-bottom: 16px; color: var(--text); }
+    .result-badge { display: inline-block; padding: 6px 20px; border-radius: 50px; font-size: 13px; font-weight: 600; margin-bottom: 24px; }
+    .badge-low { background: #DCFCE7; color: #16A34A; }
+    .badge-med { background: #FEF9C3; color: #CA8A04; }
+    .badge-high { background: #FEE2E2; color: #DC2626; }
+    .result-desc { font-size: 17px; line-height: 1.8; color: var(--text-2); max-width: 520px; margin: 0 auto 32px; text-align: left; }
+    .result-tips { background: var(--bg); border-radius: 20px; padding: 28px 32px; text-align: left; margin-bottom: 32px; }
+    .result-tips h3 { font-family: 'DM Serif Display', serif; font-size: 20px; margin-bottom: 16px; }
+    .result-tips ul { padding-left: 20px; display: flex; flex-direction: column; gap: 10px; }
+    .result-tips ul li { font-size: 15px; line-height: 1.6; color: var(--text-2); }
+    .result-cta { background: linear-gradient(135deg, var(--purple) 0%, var(--purple-dark) 100%); border-radius: 24px; padding: 40px 32px; margin-top: 8px; }
+    .result-cta h3 { font-family: 'DM Serif Display', serif; font-size: 26px; color: white; margin-bottom: 10px; }
+    .result-cta p { font-size: 16px; color: rgba(255,255,255,0.8); margin-bottom: 24px; }
+    .btn-download { display: inline-flex; align-items: center; gap: 10px; background: white; color: var(--purple); padding: 16px 32px; border-radius: 50px; font-weight: 600; font-size: 16px; text-decoration: none; box-shadow: 0 8px 24px rgba(0,0,0,0.15); }
+    .btn-retake { background: none; border: none; color: rgba(255,255,255,0.7); font-size: 14px; cursor: pointer; margin-top: 16px; display: block; text-align: center; text-decoration: underline; }
+
+    footer { background: #1A1A1A; color: rgba(255,255,255,0.5); padding: 32px 40px; text-align: center; font-size: 14px; }
+    footer a { color: #EDE9FF; text-decoration: none; }
+
+    @media (max-width: 640px) {
+      .quiz-hero { padding: 90px 20px 36px; }
+      .quiz-wrap { padding: 36px 20px 60px; }
+      .result-tips { padding: 20px; }
+      .result-cta { padding: 28px 20px; }
+    }
+  </style>
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Quiz",
+    "name": "Are You an Overthinker? Free Self-Assessment",
+    "description": "Learn what coping defense mechanisms are, how they affect your emotional wellness, and how SoulCue helps you build healthier responses to stress.",
+    "url": "https://soulcue.org/overthinking-test.html",
+    "author": { "@type": "Organization", "name": "SoulCue" },
+    "educationalLevel": "beginner",
+    "about": { "@type": "Thing", "name": "Overthinking" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Am I an overthinker?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You may be an overthinker if you regularly replay conversations, struggle to make decisions, lie awake with racing thoughts, or feel mentally exhausted from worrying. This free 10-question test can help you assess your tendency to overthink and understand what to do about it."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the signs of overthinking?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Signs of overthinking include: replaying past conversations and events, difficulty making decisions, imagining worst-case scenarios, lying awake at night with racing thoughts, second-guessing decisions you have already made, and feeling like your mind has too many tabs open at once."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I stop being an overthinker?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "To reduce overthinking: (1) Name the emotion underneath the thought — anxiety, fear, or uncertainty. (2) Set a daily worry window of 10 minutes so thoughts have an outlet. (3) Write thoughts down to externalize them. (4) Build a daily emotional check-in habit to catch spirals early. (5) Change your physical state with movement or breathing when thoughts intensify."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="canonical" href="https://soulcue.org/coping-defense-mechanisms-what-they-are-and-how-to-build-healthier-habits.html">
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo"><img src="/images/logo.png" style="width:32px;height:32px;border-radius:8px;flex-shrink:0;" alt="SoulCue">SoulCue</a>
+  <div class="nav-links" id="navLinks">
+    <a href="/">Home</a>
+    <a href="/guides.html">Guides</a>
+    <a href="/overthinking-test.html" class="active">Assess Yourself</a>
+  </div>
+  <a href="https://apps.apple.com/us/app/soulcue-ai-growth-coach/id6754840010?utm_source=website&utm_medium=quiz-nav&utm_campaign=download" class="nav-cta" onclick="trackDownload('quiz-nav')" target="_blank" rel="noopener">Download Free</a>
+  <button class="nav-burger" onclick="document.getElementById('navLinks').classList.toggle('open')">☰</button>
+</nav>
+<h1>Coping Defense Mechanisms: What They Are and How to Build Healthier Habits</h1>
+<h2>What Are Coping Defense Mechanisms?</h2><p>We all have moments when life feels overwhelming — a difficult conversation, an unexpected loss, or relentless daily stress. In those moments, your mind instinctively reaches for coping defense mechanisms: mental strategies that protect you from emotional pain. Some of these responses are healthy and adaptive. Others can quietly hold you back from genuine healing and growth.</p><p>Understanding the difference is one of the most powerful steps you can take toward lasting emotional wellness.</p><h2>The Two Main Types of Defense Mechanisms</h2><p>Psychologists generally divide coping defense mechanisms into two broad categories: adaptive (healthy) and maladaptive (unhealthy). Most people use a mix of both without even realizing it.</p><h3>Adaptive Defense Mechanisms</h3><p>Adaptive mechanisms help you process difficult emotions in constructive ways. They allow you to face reality while still protecting your mental health. Common examples include:</p><ul><li><strong>Sublimation</strong> — channeling frustration or anxiety into creative work, exercise, or a meaningful project.</li><li><strong>Humor</strong> — using lightheartedness to reduce the emotional weight of a stressful situation.</li><li><strong>Altruism</strong> — redirecting personal pain by helping others, which builds connection and purpose.</li></ul><h3>Maladaptive Defense Mechanisms</h3><p>Maladaptive mechanisms might bring short-term relief, but they often prevent you from fully processing your emotions. Over time, they can increase anxiety, strain relationships, and block personal growth. These include:</p><ul><li><strong>Repression</strong> — unconsciously pushing painful thoughts or feelings out of your awareness.</li><li><strong>Denial</strong> — refusing to acknowledge a difficult reality, even when evidence is clear.</li><li><strong>Projection</strong> — attributing your own uncomfortable feelings to someone else rather than owning them.</li><li><strong>Avoidance</strong> — steering clear of situations, people, or thoughts that trigger emotional discomfort.</li></ul><h2>Why Awareness Is the First Step to Change</h2><p>The tricky thing about coping defense mechanisms is that they operate largely below the surface. You might not even notice when you're avoiding a conversation that needs to happen, or when you're projecting frustration onto a partner after a hard day at work. That's why building self-awareness — through reflection and consistent emotional check-ins — is so essential.</p><p>When you start to recognize your own patterns, you gain the ability to pause, name what you're feeling, and choose a healthier response. That gap between stimulus and reaction is where real personal growth lives.</p><h2>How SoulCue Supports Healthier Coping</h2><p>SoulCue is designed specifically to help you develop that self-awareness and build better emotional habits over time. As your personal AI coach and mood journal, SoulCue makes it easy to track how you're feeling each day, spot recurring emotional patterns, and receive gentle, personalized guidance for working through stress in healthier ways.</p><p>Whether you're navigating anxiety, processing grief, or simply trying to respond more calmly in difficult moments, SoulCue gives you a private, judgment-free space to explore what's really going on beneath the surface.</p><h2>Start Building Emotional Resilience Today</h2><p>Coping defense mechanisms aren't something to be ashamed of — they're a natural part of being human. But with the right tools and a little daily practice, you can shift from reactive patterns to intentional, resilient responses. Download SoulCue for free and start your journey toward deeper emotional wellness today.</p>
+<footer>
+  <p>© 2026 SoulCue. Made with care. &nbsp;·&nbsp; <a href="/">Home</a> &nbsp;·&nbsp; <a href="/guides.html">Guides</a> &nbsp;·&nbsp; <a href="#">Privacy</a></p>
+  <p style="margin-top:8px;font-size:12px;color:rgba(255,255,255,0.3);">This test is for self-reflection only and is not a clinical diagnosis.</p>
+</footer>
+
+<script>
+  const answers = new Array(10).fill(null);
+  let currentQ = 0;
+
+  function selectOption(btn, score) {
+    const card = btn.closest('.question-card');
+    card.querySelectorAll('.option').forEach(o => o.classList.remove('selected'));
+    btn.classList.add('selected');
+    answers[currentQ] = score;
+    const nextBtn = document.getElementById('nextBtn' + currentQ);
+    if (nextBtn) nextBtn.classList.add('enabled');
+  }
+
+  function nextQuestion(qIndex) {
+    if (answers[qIndex] === null) return;
+    const cards = document.querySelectorAll('.question-card');
+    cards[qIndex].classList.remove('active');
+    currentQ = qIndex + 1;
+    if (currentQ < cards.length) {
+      cards[currentQ].classList.add('active');
+      updateProgress();
+    }
+  }
+
+  function prevQuestion(qIndex) {
+    const cards = document.querySelectorAll('.question-card');
+    cards[qIndex].classList.remove('active');
+    currentQ = qIndex - 1;
+    cards[currentQ].classList.add('active');
+    updateProgress();
+  }
+
+  function updateProgress() {
+    const pct = Math.round((currentQ / 10) * 100);
+    document.getElementById('progressFill').style.width = pct + '%';
+    document.getElementById('progressText').textContent = `Question ${currentQ + 1} of 10`;
+    document.getElementById('progressPct').textContent = pct + '%';
+  }
+
+  function showResult() {
+    if (answers[9] === null) return;
+    const total = answers.reduce((a, b) => a + (b || 0), 0);
+    document.getElementById('quizQuestions').style.display = 'none';
+    document.getElementById('progressWrap').style.display = 'none';
+    document.getElementById('resultSection').style.display = 'block';
+
+    let resultId, scoreText;
+    if (total <= 8) {
+      resultId = 'result-low';
+      scoreText = `Your score: ${total}/30 — Low tendency`;
+    } else if (total <= 18) {
+      resultId = 'result-medium';
+      scoreText = `Your score: ${total}/30 — Moderate tendency`;
+    } else {
+      resultId = 'result-high';
+      scoreText = `Your score: ${total}/30 — High tendency`;
+    }
+
+    document.getElementById('score-' + resultId.split('-')[1]).textContent = scoreText;
+    document.getElementById(resultId).classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+
+    if (typeof gtag !== 'undefined') {
+      gtag('event', 'quiz_completed', { 'event_label': resultId, 'value': total });
+    }
+  }
+
+  function retakeQuiz() {
+    answers.fill(null);
+    currentQ = 0;
+    document.querySelectorAll('.question-card').forEach((c, i) => {
+      c.classList.toggle('active', i === 0);
+      c.querySelectorAll('.option').forEach(o => o.classList.remove('selected'));
+      const btn = document.getElementById('nextBtn' + i);
+      if (btn) btn.classList.remove('enabled');
+    });
+    document.querySelectorAll('.result-card').forEach(r => r.classList.remove('active'));
+    document.getElementById('quizQuestions').style.display = 'block';
+    document.getElementById('progressWrap').style.display = 'block';
+    document.getElementById('resultSection').style.display = 'none';
+    updateProgress();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  document.getElementById('resultSection').style.display = 'none';
+</script>
+
+
+  <!-- Download Click Tracking -->
+  <script>
+    document.addEventListener('click', function(e) {
+      var link = e.target.closest('a');
+      if (!link) return;
+      if (link.href && link.href.includes('apps.apple.com')) {
+        var location = link.getAttribute('data-track') || 
+                       link.className.includes('nav-cta') ? 'nav' :
+                       link.className.includes('btn-white') ? 'cta' :
+                       link.className.includes('btn-primary') ? 'hero' : 'unknown';
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'app_store_click', {
+            'event_category': 'conversion',
+            'event_label': location,
+            'value': 1
+          });
+        }
+      }
+    });
+  </script>
+</body>
+</html>
