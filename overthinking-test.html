@@ -127,6 +127,26 @@
       .result-tips { padding: 20px; }
       .result-cta { padding: 28px 20px; }
     }
+  
+    /* Lang switcher */
+    .lang-switcher {
+      display: flex; align-items: center; gap: 4px;
+      margin-left: 8px;
+    }
+    .lang-switcher a {
+      font-size: 12px; font-weight: 600; letter-spacing: 0.5px;
+      padding: 4px 8px; border-radius: 6px;
+      text-decoration: none; color: #888;
+      transition: all 0.15s;
+      border: 1px solid transparent;
+    }
+    .lang-switcher a.active-lang {
+      color: #7B3FE4; background: #EDE9FF;
+      border-color: rgba(123,63,228,0.2);
+    }
+    .lang-switcher a:hover:not(.active-lang) { color: #444; background: #F5F5F5; }
+    .lang-sep { color: #ddd; font-size: 12px; }
+
   </style>
   <!-- Schema Markup -->
   <script type="application/ld+json">
@@ -174,6 +194,9 @@
   }
   </script>
   <link rel="canonical" href="https://soulcue.org/overthinking-test.html">
+  <link rel="alternate" hreflang="en" href="https://soulcue.org/overthinking-test.html">
+  <link rel="alternate" hreflang="es" href="https://soulcue.org/es/">
+  <link rel="alternate" hreflang="x-default" href="https://soulcue.org/overthinking-test.html">
 </head>
 <body>
 
@@ -182,9 +205,15 @@
   <div class="nav-links" id="navLinks">
     <a href="/">Home</a>
     <a href="/guides.html">Guides</a>
-    <a href="/overthinking-test.html" class="active">Assess Yourself</a>
+    <a href="/overthinking-test.html">Assess Yourself</a>
+    <a href="/about.html">About</a>
+    <div class="lang-switcher">
+      <a href="/overthinking-test.html" class="active-lang">EN</a>
+      <span class="lang-sep">|</span>
+      <a href="/es/">ES</a>
+    </div>
   </div>
-  <a href="https://apps.apple.com/us/app/soulcue-ai-growth-coach/id6754840010?utm_source=website&utm_medium=quiz-nav&utm_campaign=download" class="nav-cta" onclick="trackDownload('quiz-nav')" target="_blank" rel="noopener">Download Free</a>
+  <a href="https://apps.apple.com/us/app/soulcue-ai-growth-coach/id6754840010?utm_source=website&utm_medium=nav&utm_campaign=download" class="nav-cta" onclick="trackDownload('nav')" target="_blank" rel="noopener">Download Free</a>
   <button class="nav-burger" onclick="document.getElementById('navLinks').classList.toggle('open')">☰</button>
 </nav>
 

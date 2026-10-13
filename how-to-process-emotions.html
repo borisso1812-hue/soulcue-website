@@ -68,8 +68,31 @@
     .related-card h4 { font-size: 16px; font-weight: 600; margin-top: 8px; line-height: 1.4; }
     footer { background: #1A1A1A; color: rgba(255,255,255,0.5); padding: 32px 40px; text-align: center; font-size: 14px; }
     footer a { color: #EDE9FF; text-decoration: none; }
-    @media (max-width: 640px) { .article-hero { padding: 100px 20px 48px; } .article-body { padding: 40px 20px 60px; } .related { padding: 40px 20px; } .related-grid { grid-template-columns: 1fr; } .cta-box { padding: 36px 24px; } .faq-section { padding: 48px 20px; } }</style>
+    @media (max-width: 640px) { .article-hero { padding: 100px 20px 48px; } .article-body { padding: 40px 20px 60px; } .related { padding: 40px 20px; } .related-grid { grid-template-columns: 1fr; } .cta-box { padding: 36px 24px; } .faq-section { padding: 48px 20px; } }
+    /* Lang switcher */
+    .lang-switcher {
+      display: flex; align-items: center; gap: 4px;
+      margin-left: 8px;
+    }
+    .lang-switcher a {
+      font-size: 12px; font-weight: 600; letter-spacing: 0.5px;
+      padding: 4px 8px; border-radius: 6px;
+      text-decoration: none; color: #888;
+      transition: all 0.15s;
+      border: 1px solid transparent;
+    }
+    .lang-switcher a.active-lang {
+      color: #7B3FE4; background: #EDE9FF;
+      border-color: rgba(123,63,228,0.2);
+    }
+    .lang-switcher a:hover:not(.active-lang) { color: #444; background: #F5F5F5; }
+    .lang-sep { color: #ddd; font-size: 12px; }
+
+  </style>
   <link rel="canonical" href="https://soulcue.org/how-to-process-emotions.html">
+  <link rel="alternate" hreflang="en" href="https://soulcue.org/how-to-process-emotions.html">
+  <link rel="alternate" hreflang="es" href="https://soulcue.org/es/como-procesar-las-emociones.html">
+  <link rel="alternate" hreflang="x-default" href="https://soulcue.org/how-to-process-emotions.html">
 </head>
 <body>
 <nav>
@@ -78,6 +101,12 @@
     <a href="/">Home</a>
     <a href="/guides.html">Guides</a>
     <a href="/overthinking-test.html">Assess Yourself</a>
+    <a href="/about.html">About</a>
+    <div class="lang-switcher">
+      <a href="/how-to-process-emotions.html" class="active-lang">EN</a>
+      <span class="lang-sep">|</span>
+      <a href="/es/como-procesar-las-emociones.html">ES</a>
+    </div>
   </div>
   <a href="https://apps.apple.com/us/app/soulcue-ai-growth-coach/id6754840010?utm_source=website&utm_medium=nav&utm_campaign=download" class="nav-cta" onclick="trackDownload('nav')" target="_blank" rel="noopener">Download Free</a>
   <button class="nav-burger" onclick="document.getElementById('navLinks').classList.toggle('open')">☰</button>
