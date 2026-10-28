@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3N4WH1E76S"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-3N4WH1E76S');</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coaching con psicólogos: reserva tu sesión | SoulCue</title>
+  <meta name="description" content="Sesiones de coaching 1 a 1 con psicólogos por videollamada. Elige un tema, te proponemos a una persona concreta y reservas en dos minutos. Coaching, no terapia.">
+  <link rel="canonical" href="https://soulcue.org/es/coaching-con-psicologos.html">
+  <link rel="alternate" hreflang="es" href="https://soulcue.org/es/coaching-con-psicologos.html">
+  <meta property="og:title" content="Coaching con psicólogos | SoulCue">
+  <meta property="og:description" content="Te proponemos a una persona concreta y reservas tu primera sesión en dos minutos. Coaching, no terapia.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://soulcue.org/es/coaching-con-psicologos.html">
+  <meta property="og:image" content="https://soulcue.org/images/coaching/coach-card.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>document.documentElement.classList.add('js');</script>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      /* SoulCue brand, kept */
+      --bg:#FFFFFF; --ink:#1A1A1A; --muted:#555555; --accent:#7B3FE4; --accent-deep:#5a2db0;
+      --field-lilac:#EDE9FF; --field-blue:#E8F4F8; --surface:#F5F5F5; --on-accent:#FFFFFF;
+      --serif:'DM Serif Display',Georgia,serif; --sans:'DM Sans',system-ui,sans-serif;
+      --m:clamp(20px,3vw,40px);           /* the one pair of outer margins */
+      --gap:clamp(120px,14vw,200px);      /* between sections */
+      --t-display:clamp(44px,6.4vw,104px);
+      --t-head:clamp(36px,4.6vw,72px);
+      --t-state:clamp(24px,2.4vw,34px);
+      --t-body:18px; --t-small:15px; --t-lead:21px;
+      --ease:cubic-bezier(.2,.7,.1,1);
+    }
+    html{scroll-behavior:smooth;scroll-padding-top:80px}
+    body{font-family:var(--sans);font-size:var(--t-body);line-height:1.55;color:var(--ink);background:var(--bg);overflow-x:hidden}
+    img{display:block;max-width:100%;height:auto}
+    a{color:inherit}
+    :focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+    ::selection{background:var(--accent);color:var(--on-accent)}
+    .wrap{padding-left:var(--m);padding-right:var(--m)}
+    .grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:clamp(16px,2vw,32px)}
+    h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-.02em;line-height:1}
+
+    /* Nav: the site's own bar, made plain */
+    nav{position:fixed;top:0;left:0;right:0;z-index:50;height:64px;padding:0 var(--m);display:flex;align-items:center;gap:24px;background:var(--bg)}
+    .nav-links a{font-size:var(--t-small)}
+    .nav-logo{font-family:var(--serif);font-size:21px;color:var(--accent);text-decoration:none;display:flex;align-items:center;gap:8px}
+    .nav-logo img{width:32px;height:32px;border-radius:8px}
+    .nav-links{display:flex;gap:4px;align-items:center;flex:1;justify-content:flex-end}
+    .nav-links a{text-decoration:none;color:var(--muted);font-size:15px;font-weight:500;padding:8px 12px;border-radius:999px;transition:background .2s,color .2s}
+    .nav-links a:hover{background:var(--surface);color:var(--ink)}
+    .nav-links a[aria-current]{color:var(--accent);background:var(--field-lilac)}
+    .nav-burger{display:none;background:none;border:0;font:500 15px var(--sans);color:var(--ink);padding:10px 12px;border-radius:999px;cursor:pointer}
+    @media(max-width:860px){
+      .nav-links{display:none}
+      .nav-links.open{display:flex;position:fixed;top:64px;left:0;right:0;flex-direction:column;align-items:stretch;background:var(--bg);padding:8px var(--m) 16px}
+      .nav-burger{display:block;margin-left:auto}
+    }
+
+    /* Buttons: one shape, fully round */
+    .btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 30px;border-radius:999px;border:0;background:var(--accent);color:var(--on-accent);font:600 18px var(--sans);text-decoration:none;cursor:pointer;transition:background .2s,transform .2s var(--ease)}
+    .btn:hover{background:var(--accent-deep);transform:translateY(-2px)}
+    .btn:active{transform:translateY(0) scale(.98)}
+    .btn-ink{background:var(--ink)}
+    .btn-light{background:var(--bg);color:var(--ink)}
+    .btn-light:hover{background:var(--field-lilac)}
+    .link{font-weight:600;text-decoration:underline;text-underline-offset:5px;text-decoration-thickness:2px;transition:color .2s}
+    .link:hover{color:var(--accent)}
+
+    /* 1. Hero: a picture set into the line */
+    .hero{background:var(--field-blue);min-height:100svh;display:flex;flex-direction:column;justify-content:space-between;padding-top:64px;padding-bottom:clamp(28px,4vw,48px)}
+    .hero-title{flex:1;display:flex;align-items:center;justify-content:center}
+    .hero h1{font-size:var(--t-display);display:flex;align-items:baseline;justify-content:center;gap:.22em;white-space:nowrap}
+    .slot{display:inline-block;height:.78em;width:2.3em;overflow:hidden;align-self:baseline;transform:translateY(.06em);border-radius:.14em;background:var(--field-lilac)}
+    .slot img{width:100%;height:100%;object-fit:cover;object-position:0 50%}
+    .hero-foot{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:clamp(16px,2vw,32px);align-items:end}
+    .hero-foot p{grid-column:1/8;font-size:var(--t-lead);max-width:44ch}
+    .hero-actions{grid-column:9/13;display:flex;gap:24px;align-items:center;justify-content:flex-end;flex-wrap:wrap}
+    @media(max-width:760px){
+      .hero h1{flex-direction:column;align-items:center;gap:.12em;font-size:13vw;line-height:.95;text-align:center}
+      .slot{order:0;width:100%;height:auto;aspect-ratio:518/232;transform:none;margin:.1em 0;max-width:calc(100vw - 2*var(--m))}
+      .hero-foot{display:block}
+      .hero-foot p{margin-bottom:24px}
+      .hero-actions{justify-content:flex-start}
+      .hero-actions .btn{width:100%}
+    }
+
+    section{margin-top:var(--gap)}
+    .sec-head{font-size:var(--t-head);max-width:14ch}
+
+    /* 2. Coaching, not therapy: statement, table pushed right */
+    .scope h2{grid-column:1/13;padding-left:3vw;margin-bottom:clamp(48px,6vw,96px)}
+    .scope figure{grid-column:1/5;grid-row:2/4;align-self:start}
+    .scope .crop{overflow:hidden;border-radius:12px}
+    .scope figure img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 8%;background:var(--field-blue)}
+    .scope figcaption{font-size:var(--t-small);color:var(--muted);margin-top:12px}
+    .scope-table{grid-column:6/13;grid-row:2;width:100%;border-collapse:collapse;font-size:var(--t-body)}
+    .scope-table th,.scope-table td{text-align:left;font-weight:400;padding:12px 16px 12px 0;vertical-align:top}
+    .scope-table th{color:var(--muted);font-size:var(--t-small);padding-top:15px;width:16%}
+    .scope-table td:last-child{color:var(--muted);text-align:right;padding-right:0}
+    .scope-table tr.gap>*{padding-top:44px}
+    .scope-note{grid-column:6/13;grid-row:3;margin-top:40px;font-size:var(--t-state);font-family:var(--serif);line-height:1.15;max-width:24ch}
+    @media(max-width:860px){
+      .scope h2{padding-left:0}
+      .scope-table,.scope-note{grid-column:1/13}
+      .scope figure{grid-column:3/13;margin-top:48px}
+      .scope-table,.scope-note,.scope figure{grid-row:auto}
+      .scope-table td:last-child{display:none}
+    }
+
+    /* 3. The live thing: the sentence with a blank */
+    .match{background:var(--field-lilac);padding-top:clamp(80px,10vw,140px);padding-bottom:clamp(80px,10vw,140px)}
+    .match h2{font-size:var(--t-head);line-height:1.05;max-width:none}
+    .blank{display:inline-block;min-width:3em;padding:0 .18em;border-radius:.16em;background:var(--bg);color:var(--muted);transition:color .25s,background .25s}
+    .blank.filled{background:var(--accent);color:var(--on-accent)}
+    .match-sub{margin-top:24px;max-width:52ch}
+    .topics{display:flex;flex-wrap:wrap;gap:12px;margin-top:40px;border:0}
+    .topics legend{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+    .chip{position:relative}
+    .chip input{position:absolute;opacity:0;inset:0;cursor:pointer;z-index:1;margin:0}
+    .chip span{display:inline-flex;align-items:center;min-height:48px;padding:0 22px;border-radius:999px;background:var(--bg);font-weight:500;font-size:var(--t-body);transition:background .2s,color .2s,transform .2s var(--ease)}
+    .chip:hover span{transform:translateY(-2px)}
+    .chip input:checked+span{background:var(--ink);color:var(--bg)}
+    .chip input:focus-visible+span{outline:3px solid var(--accent);outline-offset:3px}
+    .match-body{margin-top:clamp(48px,6vw,80px);align-items:start}
+    .coach{grid-column:1/7;background:var(--bg);border-radius:16px;padding:clamp(24px,3vw,40px)}
+    .coach-wait{color:var(--muted);font-size:var(--t-state);font-family:var(--serif);line-height:1.15}
+    .coach-who{font-size:var(--t-small);color:var(--muted)}
+    .coach h3{font-size:var(--t-head);margin:6px 0 12px}
+    .coach-role{font-size:var(--t-body);font-weight:600}
+    .coach-bio{margin-top:16px;max-width:46ch}
+    .coach-facts{list-style:none;margin-top:24px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+    .coach-facts li{background:var(--surface);border-radius:12px;padding:14px 16px;font-size:var(--t-small);color:var(--muted)}
+    .coach-facts b{display:block;color:var(--ink);font-size:var(--t-body);font-weight:600}
+    .coach-other{margin-top:24px;background:none;border:0;font:600 18px var(--sans);color:var(--ink);text-decoration:underline;text-underline-offset:5px;cursor:pointer}
+    .coach-other:hover{color:var(--accent)}
+    .book{grid-column:8/13}
+    .book h3{font-family:var(--sans);font-size:var(--t-lead);font-weight:600;letter-spacing:0;margin-bottom:14px}
+    .slots{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-bottom:32px}
+    .slots button{min-height:56px;border:0;border-radius:12px;background:var(--bg);font:500 var(--t-small) var(--sans);color:var(--ink);cursor:pointer;text-align:left;padding:8px 16px;transition:background .2s,color .2s,transform .2s var(--ease)}
+    .slots button:hover{transform:translateY(-2px)}
+    .slots button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+    .slots-tz{font-size:var(--t-small);color:var(--muted);margin:-20px 0 32px}
+    form label{display:block;font-weight:500;font-size:var(--t-small);margin-bottom:6px}
+    .field{margin-bottom:16px}
+    .field input,.field select,.field textarea{width:100%;min-height:52px;border:0;border-radius:12px;background:var(--bg);padding:12px 16px;font:400 18px var(--sans);color:var(--ink)}
+    .field textarea{min-height:96px;resize:vertical}
+    .consent{display:flex;gap:12px;align-items:flex-start;margin:20px 0 24px;font-size:var(--t-small);line-height:1.45}
+    .consent input{width:22px;height:22px;margin-top:2px;accent-color:var(--accent);flex-shrink:0}
+    .form-help{font-size:var(--t-small);color:var(--muted);margin-top:14px}
+    .book .btn{width:100%}
+    .hp{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+    .done{background:var(--bg);border-radius:16px;padding:32px}
+    .done h3{font-size:var(--t-state);margin-bottom:12px}
+    .js .nojs{display:none}
+    html:not(.js) .jsonly{display:none}
+    @media(max-width:860px){.coach,.book{grid-column:1/13}.book{margin-top:32px}.coach-facts{grid-template-columns:1fr 1fr}}
+
+    /* 4. How it works: stages as one bar */
+    .how h2{margin-bottom:64px}
+    .bar{display:flex;gap:6px;height:22vh;min-height:150px}
+    .seg{border-radius:12px;padding:20px}
+    .dur{display:block;font-family:var(--serif);font-size:var(--t-state);line-height:1.05}
+    .seg:nth-child(1){flex-grow:1.2;background:var(--field-lilac)}
+    .seg:nth-child(2){flex-grow:2;background:var(--field-blue)}
+    .seg:nth-child(3){flex-grow:3;background:var(--surface)}
+    .seg:nth-child(4){flex-grow:4.5;background:var(--ink);color:var(--bg)}
+    .bar-notes{display:flex;gap:6px;margin-top:20px}
+    .bar-notes p{font-size:var(--t-body);max-width:24ch;padding-right:12px}
+    .bar-notes p:nth-child(1){flex-grow:1.2;flex-basis:0}
+    .bar-notes p:nth-child(2){flex-grow:2;flex-basis:0}
+    .bar-notes p:nth-child(3){flex-grow:3;flex-basis:0}
+    .bar-notes p:nth-child(4){flex-grow:4.5;flex-basis:0}
+    .how-shots{margin-top:clamp(56px,7vw,96px);align-items:end}
+    .how-shots figure:nth-child(1){grid-column:1/6}
+    .how-shots figure:nth-child(2){grid-column:7/13}
+    .how-shots img{width:100%;border-radius:12px;background:var(--surface)}
+    .how-shots figcaption{font-size:var(--t-small);color:var(--muted);margin-top:12px}
+    @media(max-width:760px){
+      .bar,.bar-notes{display:none}
+      .stack{display:flex;flex-direction:column;gap:6px}
+      .stack .seg{min-height:72px}
+      .stack .seg p{font-size:var(--t-body);line-height:1.45;margin-top:8px}
+      .stack .seg:nth-child(1){min-height:96px}.stack .seg:nth-child(2){min-height:130px}.stack .seg:nth-child(3){min-height:160px}.stack .seg:nth-child(4){min-height:210px}
+      .how-shots figure:nth-child(1),.how-shots figure:nth-child(2){grid-column:1/13;margin-bottom:24px}
+    }
+    @media(min-width:761px){.stack{display:none}}
+
+    /* 5. Price as a sentence */
+    .price{background:var(--surface);min-height:80svh;display:flex;flex-direction:column;justify-content:center;padding-top:clamp(80px,10vw,140px);padding-bottom:clamp(80px,10vw,140px)}
+    .price h2{font-size:var(--t-display);line-height:.98}
+    .price-tag{display:inline-block;background:var(--accent);color:var(--on-accent);padding:0 .15em;border-radius:.12em}
+    .price-foot{margin-top:64px;align-items:end}
+    .price-foot .txt{grid-column:1/6;font-size:var(--t-lead);max-width:40ch}
+    .price-foot .txt .btn{margin-top:32px}
+    .price-foot figure{grid-column:7/13}
+    .price-foot img{width:100%;border-radius:12px}
+    .price-foot figcaption{font-size:var(--t-small);color:var(--muted);margin-top:12px}
+    @media(max-width:760px){.price h2{font-size:10.5vw}.price-foot .txt,.price-foot figure{grid-column:1/13}.price-foot .btn{width:100%}.price-foot figure{margin-top:40px}}
+
+    /* 6. FAQ: large questions, answers beside */
+    .faq-row{padding-bottom:clamp(56px,6vw,84px)}
+    .faq-row h2,.faq-row h3{grid-column:1/7;font-size:var(--t-state);line-height:1.12;letter-spacing:-.01em}
+    .faq-row h2{color:var(--muted)}
+    .faq-row p{grid-column:8/13;max-width:42ch;padding-top:4px}
+    .faq-row p a{font-weight:600}
+    @media(max-width:760px){.faq-row h2,.faq-row h3,.faq-row p{grid-column:1/13}.faq-row p{margin-top:12px}}
+
+    /* 7. Close and footer: invitation over a cropped name */
+    footer{margin-top:var(--gap);background:var(--ink);color:var(--bg);min-height:100svh;display:flex;flex-direction:column;overflow:hidden;padding-top:clamp(80px,10vw,140px)}
+    .close h2{grid-column:1/9;font-size:var(--t-head);line-height:1.02;margin-bottom:36px}
+    .close .btn-wrap{grid-column:1/8}
+    .close ul{grid-column:10/13;grid-row:1/3;list-style:none;display:flex;flex-direction:column;gap:10px;font-size:var(--t-body)}
+    .close ul a{text-decoration:none;color:#D9D9D9;transition:color .2s}
+    .close ul a:hover{color:var(--bg)}
+    .legal{margin-top:auto;display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;font-size:var(--t-small);color:#BDBDBD;padding-top:48px;padding-bottom:12px}
+    .legal a{color:#BDBDBD}
+    .wordmark{font-family:var(--serif);font-size:29vw;line-height:.8;white-space:nowrap;letter-spacing:-.04em;transform:translateY(22%);margin-left:calc(var(--m) - .04em);color:var(--field-lilac)}
+    @media(max-width:760px){.close h2,.close .btn-wrap,.close ul{grid-column:1/13}.close .btn{width:100%}.close ul{grid-row:3;flex-direction:row;flex-wrap:wrap;gap:8px 20px;margin-top:32px}.wordmark{font-size:36vw}}
+
+    /* Motion */
+    .js .rise{opacity:0;transform:translateY(24px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+    .js .rise.in{opacity:1;transform:none}
+    .js .slot{clip-path:inset(0 100% 0 0);transition:clip-path 1.1s var(--ease)}
+    .js .slot img{transform:scale(1.12);transition:transform 1.4s var(--ease)}
+    .js .slot.in{clip-path:inset(0 0 0 0)}
+    .js .slot.in img{transform:none}
+    .drift{animation:drift 18s ease-in-out infinite alternate}
+    @keyframes drift{from{transform:scale(1.02) translateY(0)}to{transform:scale(1.08) translateY(-2%)}}
+    .coach.swap{animation:swap .5s var(--ease)}
+    @keyframes swap{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+    @media(prefers-reduced-motion:reduce){
+      .js .rise,.js .slot,.js .slot img{opacity:1;transform:none;clip-path:none;transition:none}
+      .drift,.coach.swap{animation:none}
+      html{scroll-behavior:auto}
+    }
+  </style>
+</head>
+<body>
+
+<nav aria-label="Principal">
+  <a href="/es/" class="nav-logo"><img src="/images/logo.png" alt="" width="32" height="32">SoulCue</a>
+  <button class="nav-burger" aria-expanded="false" aria-controls="navLinks" onclick="var l=document.getElementById('navLinks');this.setAttribute('aria-expanded',l.classList.toggle('open'))">Menú</button>
+  <div class="nav-links" id="navLinks">
+    <a href="/es/">Inicio</a>
+    <a href="/es/coaching-con-psicologos.html" aria-current="page">Coaching</a>
+    <a href="/es/guias.html">Guías</a>
+    <a href="/es/acerca.html">Acerca</a>
+    <a href="/" hreflang="en" lang="en">English</a>
+  </div>
+</nav>
+
+<main>
+  <header class="hero wrap" style="padding-top:64px">
+    <div class="hero-title">
+      <h1>Coaching <span class="slot"><img src="/images/coaching/coach-card.jpg" alt="Tarjeta «Your coach» de la app SoulCue" width="518" height="232"></span> con psicólogos</h1>
+    </div>
+    <div class="hero-foot">
+      <p class="rise">Elige qué quieres trabajar, te proponemos a una persona concreta y reservas tu primera videollamada en dos minutos. Es coaching para avanzar, no terapia.</p>
+      <div class="hero-actions rise">
+        <a href="#como-funciona" class="link">Cómo funciona</a>
+        <a href="#empezar" class="btn">Encontrar mi coach</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="scope wrap" aria-labelledby="scope-h">
+    <div class="grid">
+      <h2 id="scope-h" class="sec-head rise">Coaching, no terapia</h2>
+      <table class="scope-table rise">
+        <caption class="hp">Qué trabajamos y qué no</caption>
+        <tbody>
+          <tr><th scope="row">Sí</th><td>Ansiedad del día a día</td><td>herramientas para esa semana</td></tr>
+          <tr><th scope="row">Sí</th><td>Estrés y agotamiento</td><td>límites, ritmo, descanso</td></tr>
+          <tr><th scope="row">Sí</th><td>Relaciones</td><td>conversaciones difíciles</td></tr>
+          <tr><th scope="row">Sí</th><td>Autoestima</td><td>cómo te hablas</td></tr>
+          <tr><th scope="row">Sí</th><td>Pensar demasiado</td><td>salir del bucle</td></tr>
+          <tr><th scope="row">Sí</th><td>Decisiones y cambios</td><td>trabajo, mudanza, rupturas</td></tr>
+          <tr class="gap"><th scope="row">No</th><td>Diagnóstico</td><td>no evaluamos trastornos</td></tr>
+          <tr><th scope="row">No</th><td>Tratamiento</td><td>ni medicación ni psicoterapia</td></tr>
+          <tr><th scope="row">No</th><td>Urgencias</td><td>líneas de ayuda, abajo</td></tr>
+        </tbody>
+      </table>
+      <figure class="rise">
+        <div class="crop" style="overflow:hidden"><img class="drift" src="/images/coaching/chat.jpg" alt="Conversación con una coach en la app SoulCue: «¿Qué pasó? ¿Qué hace que te sientas abrumado ahora?»" width="590" height="1220" loading="lazy"></div>
+        <figcaption>Entre sesiones, sigues la conversación en la app.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="match wrap" id="empezar" aria-labelledby="match-h">
+    <h2 id="match-h" class="rise">Quiero trabajar en <span class="blank" id="blank" aria-live="polite">…</span></h2>
+    <p class="match-sub rise">Elige un tema y te proponemos a la persona que mejor encaja, con sus próximos horarios libres.</p>
+
+    <fieldset class="topics jsonly rise" id="topics">
+      <legend>Tema</legend>
+      <label class="chip"><input type="radio" name="t" value="ansiedad" checked><span>mi ansiedad</span></label>
+      <label class="chip"><input type="radio" name="t" value="estres"><span>el estrés</span></label>
+      <label class="chip"><input type="radio" name="t" value="relaciones"><span>mis relaciones</span></label>
+      <label class="chip"><input type="radio" name="t" value="autoestima"><span>mi autoestima</span></label>
+      <label class="chip"><input type="radio" name="t" value="pensar"><span>pensar menos</span></label>
+      <label class="chip"><input type="radio" name="t" value="decisiones"><span>una decisión</span></label>
+    </fieldset>
+
+    <div class="grid match-body">
+      <article class="coach jsonly" id="coach" aria-live="polite">
+        <p class="coach-wait">Elige un tema arriba y aquí aparece tu coach.</p>
+      </article>
+
+      <div class="book">
+        <div class="jsonly" id="slotsBox" hidden>
+          <h3 id="slots-h">Elige un horario</h3>
+          <div class="slots" id="slots" role="group" aria-labelledby="slots-h"></div>
+          <p class="slots-tz" id="tz"></p>
+        </div>
+
+        <form name="reserva-coaching" method="POST" action="/es/coaching-con-psicologos.html?enviado=1#empezar" data-netlify="true" netlify-honeypot="empresa" id="form">
+          <input type="hidden" name="form-name" value="reserva-coaching">
+          <input type="hidden" name="coach" id="f-coach">
+          <input type="hidden" name="horario" id="f-slot">
+          <p class="hp"><label>No llenar: <input name="empresa" tabindex="-1" autocomplete="off"></label></p>
+          <div class="nojs">
+            <div class="field"><label for="f-tema-s">¿Qué quieres trabajar?</label>
+              <select id="f-tema-s" name="tema-elegido"><option>Ansiedad</option><option>Estrés y agotamiento</option><option>Relaciones</option><option>Autoestima</option><option>Pensar demasiado</option><option>Decisiones y cambios</option></select></div>
+            <div class="field"><label for="f-pref">¿Qué días y horas te van bien?</label><input id="f-pref" name="preferencia"></div>
+          </div>
+          <input type="hidden" name="tema" id="f-tema">
+          <h3 class="jsonly" id="form-h">Tus datos</h3>
+          <div class="field"><label for="f-name">Nombre</label><input id="f-name" name="nombre" autocomplete="given-name" required></div>
+          <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required aria-describedby="f-email-help"></div>
+          <p class="form-help" id="f-email-help" style="margin:-8px 0 16px">Ahí te llega la confirmación y el enlace de la videollamada.</p>
+          <div class="field"><label for="f-phone">WhatsApp (opcional)</label><input id="f-phone" name="whatsapp" type="tel" autocomplete="tel"></div>
+          <div class="field"><label for="f-note">¿Algo que tu coach deba saber? (opcional)</label><textarea id="f-note" name="nota"></textarea></div>
+          <label class="consent"><input type="checkbox" name="acepto" value="si" required> <span>Entiendo que es coaching, no terapia ni atención de urgencias, y soy mayor de 18 años.</span></label>
+          <button class="btn" type="submit" id="submit">Reservar mi sesión</button>
+          <p class="form-help">Te confirmamos por email en menos de 24 horas. No pagas nada hasta la confirmación.</p>
+        </form>
+        <div class="done" id="done" hidden tabindex="-1">
+          <h3>Listo, tu solicitud llegó.</h3>
+          <p id="done-text">Te escribimos en menos de 24 horas para confirmar el horario y enviarte el enlace.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="how wrap" id="como-funciona" aria-labelledby="how-h">
+    <h2 id="how-h" class="sec-head rise">Así funciona</h2>
+    <div class="bar rise" data-ui>
+      <div class="seg"><span class="dur">Dos minutos</span></div>
+      <div class="seg"><span class="dur">Hasta 24 horas</span></div>
+      <div class="seg"><span class="dur">50 minutos</span></div>
+      <div class="seg"><span class="dur">Toda la semana</span></div>
+    </div>
+    <div class="bar-notes rise">
+      <p>Primero eliges tema y horario aquí mismo.</p>
+      <p>Después te confirmamos por email, con el enlace.</p>
+      <p>Luego, la sesión por videollamada con tu coach.</p>
+      <p>Entre sesiones, check-ins y diario en la app SoulCue.</p>
+    </div>
+    <div class="stack" data-ui>
+      <div class="seg"><p class="dur">Dos minutos</p><p>Primero eliges tema y horario aquí mismo.</p></div>
+      <div class="seg"><p class="dur">Hasta 24 horas</p><p>Después te confirmamos por email, con el enlace.</p></div>
+      <div class="seg"><p class="dur">50 minutos</p><p>Luego, la sesión por videollamada con tu coach.</p></div>
+      <div class="seg"><p class="dur">Toda la semana</p><p>Entre sesiones, check-ins y diario en la app SoulCue.</p></div>
+    </div>
+    <div class="grid how-shots">
+      <figure class="rise">
+        <img src="/images/coaching/session.jpg" alt="Tarjeta de la app SoulCue: «Session is Today», sesión de coaching de hoy y reflexiones pendientes" width="518" height="234" loading="lazy">
+        <figcaption>El día de la sesión, la app te la recuerda.</figcaption>
+      </figure>
+      <figure class="rise">
+        <img src="/images/coaching/mood-trend.jpg" alt="Gráfica semanal de ánimo en la app SoulCue, de lunes a domingo" width="672" height="390" loading="lazy">
+        <figcaption>Tu coach ve cómo te fue la semana, si tú quieres compartirlo.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="price wrap" aria-labelledby="price-h">
+    <h2 id="price-h" class="rise">Sesión de 50 minutos: <span class="price-tag">US$40</span></h2>
+    <div class="grid price-foot">
+      <div class="txt rise">
+        <p>Por videollamada, con la misma persona cada vez. Sin suscripción ni permanencia: reservas sesión a sesión y cancelas gratis hasta 24 horas antes.</p>
+        <a href="#empezar" class="btn btn-ink">Encontrar mi coach</a>
+      </div>
+      <figure class="rise">
+        <img src="/images/coaching/checkin.jpg" alt="Check-in diario de la app SoulCue: «How are you feeling today?» con cinco caras para elegir" width="518" height="302" loading="lazy">
+        <figcaption>Incluye la app SoulCue gratis: tu check-in diario entre sesiones.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="faq wrap" aria-labelledby="faq-h">
+    <div class="grid faq-row rise"><h2 id="faq-h">Preguntas</h2></div>
+    <div class="grid faq-row rise"><h3>¿Esto es terapia?</h3><p>No. Es coaching: sesiones enfocadas en algo concreto que quieres cambiar ahora, con tareas pequeñas entre una sesión y otra. Si tu coach ve que necesitas psicoterapia, te lo dice y te orienta.</p></div>
+    <div class="grid faq-row rise"><h3>¿Quiénes son los coaches?</h3><p>Psicólogos titulados que trabajan en formato de coaching. Antes de que entren revisamos su título profesional y hacemos una entrevista.</p></div>
+    <div class="grid faq-row rise"><h3>¿Cómo eligen a mi coach?</h3><p>Por el tema que eliges y por sus horarios libres. Si prefieres a otra persona, pulsa «Ver otra opción» o pide el cambio después de la primera sesión.</p></div>
+    <div class="grid faq-row rise"><h3>¿Cómo es una sesión?</h3><p>Una videollamada de 50 minutos. Recibes el enlace por email; solo necesitas el móvil o la computadora y un lugar tranquilo.</p></div>
+    <div class="grid faq-row rise"><h3>¿Y si estoy en una crisis?</h3><p>Este servicio no es para urgencias. En México llama a la Línea de la Vida, <a href="tel:8009112000">800 911 2000</a>; en España, <a href="tel:024">llama al 024</a>. Si hay peligro inmediato, al 911 o al 112.</p></div>
+    <div class="grid faq-row rise"><h3>¿Quién ve lo que cuento?</h3><p>Solo tu coach. Lo que escribes en la app sigue siendo tuyo y decides qué compartir.</p></div>
+  </section>
+</main>
+
+<footer>
+  <div class="close wrap grid">
+    <h2 class="rise">Habla con alguien esta semana</h2>
+    <ul aria-label="Más de SoulCue">
+      <li><a href="/es/guias.html">Guías</a></li>
+      <li><a href="/es/que-es-el-coaching-emocional.html">Qué es el coaching emocional</a></li>
+      <li><a href="https://apps.apple.com/us/app/soulcue-ai-growth-coach/id6754840010" target="_blank" rel="noopener">App para iPhone</a></li>
+      <li><a href="/es/acerca.html">Acerca de SoulCue</a></li>
+    </ul>
+    <div class="btn-wrap rise"><a href="#empezar" class="btn btn-light">Encontrar mi coach</a></div>
+  </div>
+  <div class="legal wrap">
+    <span>© 2026 SoulCue · Coaching, no terapia</span>
+    <a href="/" hreflang="en" lang="en">English</a>
+  </div>
+  <div class="wordmark" aria-hidden="true">SoulCue</div>
+</footer>
+
+<script>
+(function(){
+  /* EJEMPLO: sustituir por los coaches reales antes de publicar.
+     dias: 1=lunes … 5=viernes; horas en hora de Ciudad de México (UTC-6, sin horario de verano). */
+  var COACHES = [
+    {id:'lucia', nombre:'Lucía Herrera', rol:'Psicóloga · coach en ansiedad y estrés', anos:'8 años', idiomas:'Español', modo:'Práctico', temas:['ansiedad','estres','pensar'],
+     bio:'Trabaja con personas que funcionan bien por fuera pero viven con el pecho apretado. Sales de cada sesión con una técnica para probar esa semana.',
+     agenda:{1:[9,17],2:[11,18],3:[9,13],4:[17,19],5:[10]}},
+    {id:'martin', nombre:'Martín Aguilar', rol:'Psicólogo · coach en relaciones y autoestima', anos:'11 años', idiomas:'Español, inglés', modo:'Directo', temas:['relaciones','autoestima'],
+     bio:'Acompaña conversaciones difíciles: con la pareja, la familia o el jefe. Te ayuda a decir lo que necesitas sin romper el vínculo.',
+     agenda:{1:[18,20],2:[8],3:[18,20],4:[8,12],5:[16]}},
+    {id:'sofia', nombre:'Sofía Ramírez', rol:'Psicóloga · coach en cambios y agotamiento', anos:'6 años', idiomas:'Español', modo:'Por objetivos', temas:['decisiones','estres','autoestima'],
+     bio:'Para cuando estás ante un cambio grande o llevas meses al límite. Ordena contigo las opciones y el primer paso de cada una.',
+     agenda:{1:[12],2:[9,15],3:[15,19],4:[10],5:[9,13]}},
+    {id:'daniel', nombre:'Daniel Ortega', rol:'Psicólogo · coach en pensamiento y hábitos', anos:'9 años', idiomas:'Español', modo:'Con diario', temas:['pensar','ansiedad','decisiones'],
+     bio:'Si tu cabeza no se apaga de noche, empieza aquí. Trabaja con el diario de la app para que veas tus patrones con datos.',
+     agenda:{1:[20],2:[19,21],3:[7,20],4:[19],5:[18]}}
+  ];
+  var TEMAS = {ansiedad:'mi ansiedad',estres:'el estrés',relaciones:'mis relaciones',autoestima:'mi autoestima',pensar:'pensar menos',decisiones:'una decisión'};
+
+  var $ = function(id){return document.getElementById(id)};
+  var tema=null, pick=0, coach=null, slot=null;
+  var tz = Intl.DateTimeFormat().resolvedOptions().timeZone || '';
+  var fmtDay = new Intl.DateTimeFormat('es',{weekday:'short',day:'numeric',month:'short'});
+  var fmtTime = new Intl.DateTimeFormat('es',{hour:'2-digit',minute:'2-digit'});
+
+  function slotsFor(c){
+    var out=[], now=new Date(), minStart=now.getTime()+20*3600e3;
+    for(var d=0; d<10 && out.length<6; d++){
+      var day=new Date(Date.UTC(now.getUTCFullYear(),now.getUTCMonth(),now.getUTCDate()+d));
+      var wd=day.getUTCDay(); var hours=c.agenda[wd]; if(!hours) continue;
+      hours.forEach(function(h){
+        var t=Date.UTC(day.getUTCFullYear(),day.getUTCMonth(),day.getUTCDate(),h+6);
+        if(t>minStart && out.length<6) out.push(new Date(t));
+      });
+    }
+    return out;
+  }
+  function esc(s){return s.replace(/[&<>"]/g,function(m){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]})}
+
+  function render(){
+    var list=COACHES.filter(function(c){return c.temas.indexOf(tema)>-1});
+    coach=list[pick%list.length]; slot=null;
+    var el=$('coach');
+    el.innerHTML='<h3>'+esc(coach.nombre)+'</h3><p class="coach-role">'+esc(coach.rol)+'</p>'+
+      '<p class="coach-bio">'+esc(coach.bio)+'</p><ul class="coach-facts"><li><b>'+coach.anos+'</b>de experiencia</li><li><b>'+esc(coach.idiomas)+'</b>idiomas</li><li><b>'+esc(coach.modo)+'</b>estilo</li></ul>'+
+      (list.length>1?'<button type="button" class="coach-other" id="other">Ver otra opción</button>':'');
+    el.classList.remove('swap'); void el.offsetWidth; el.classList.add('swap');
+    var o=$('other'); if(o) o.onclick=function(){pick++;render();};
+    var box=$('slots'); box.innerHTML='';
+    slotsFor(coach).forEach(function(d){
+      var b=document.createElement('button'); b.type='button'; b.setAttribute('aria-pressed','false');
+      var day=fmtDay.format(d); b.textContent=day.charAt(0).toUpperCase()+day.slice(1)+', '+fmtTime.format(d);
+      b.onclick=function(){
+        [].forEach.call(box.children,function(x){x.setAttribute('aria-pressed','false')});
+        b.setAttribute('aria-pressed','true'); slot=d; $('f-slot').value=b.textContent+' ('+tz+') · '+d.toISOString(); update();
+      };
+      box.appendChild(b);
+    });
+    $('tz').textContent='Horarios en tu hora local'+(tz?' ('+tz.replace(/_/g,' ')+')':'')+'.';
+    $('slotsBox').hidden=false;
+    $('f-coach').value=coach.nombre; $('f-slot').value='';
+    update();
+  }
+  function update(){
+    var first=coach?coach.nombre.split(' ')[0]:'';
+    $('submit').textContent= coach ? (slot?'Reservar con '+first:'Elige un horario para '+first) : 'Elige un tema para empezar';
+    $('submit').disabled = !(coach && slot);
+    $('form-h').textContent = coach ? 'Tus datos para '+first : 'Tus datos';
+  }
+
+  [].forEach.call(document.querySelectorAll('#topics input'),function(r){
+    r.addEventListener('change',function(){
+      tema=r.value; pick=0;
+      var b=$('blank'); b.textContent=TEMAS[tema]; b.classList.add('filled');
+      $('f-tema').value=TEMAS[tema];
+      render();
+    });
+  });
+  var pre=document.querySelector('#topics input:checked'); if(pre){ pre.dispatchEvent(new Event('change')); } else update();
+
+  $('form').addEventListener('submit',function(e){
+    if(!(coach&&slot)){e.preventDefault();return;}
+    e.preventDefault();
+    var f=e.target, data=new URLSearchParams(new FormData(f)).toString();
+    $('submit').disabled=true; $('submit').textContent='Enviando…';
+    fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:data})
+      .then(function(r){ if(!r.ok) throw 0; ok(); })
+      .catch(function(){ $('submit').disabled=false; update(); alertBox(); });
+    if(typeof gtag==='function') gtag('event','coaching_booking',{event_category:'conversion',event_label:coach.id});
+  });
+  function ok(){
+    $('form').hidden=true; $('slotsBox').hidden=true;
+    $('done-text').textContent='Pediste una sesión con '+coach.nombre+' el '+$('f-slot').value.split(' · ')[0]+'. Te escribimos en menos de 24 horas para confirmar y enviarte el enlace.';
+    $('done').hidden=false; $('done').focus();
+  }
+  function alertBox(){
+    var p=document.querySelector('#form .form-help:last-of-type');
+    p.textContent='No pudimos enviar la solicitud. Revisa tu conexión e inténtalo de nuevo.';
+  }
+  if(location.search.indexOf('enviado=1')>-1){ $('form').hidden=true; $('done').hidden=false; }
+
+  /* entrances */
+  var items=document.querySelectorAll('.rise,.slot');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}})},{rootMargin:'0px 0px -8% 0px'});
+    items.forEach(function(el){
+      var sib=el.parentNode?[].filter.call(el.parentNode.children,function(x){return x.classList.contains('rise')}):[];
+      var i=sib.indexOf(el); if(i>0) el.style.transitionDelay=(i*80)+'ms';
+      io.observe(el);
+    });
+  } else items.forEach(function(el){el.classList.add('in')});
+})();
+</script>
+</body>
+</html>

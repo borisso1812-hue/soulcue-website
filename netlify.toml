@@ -52,6 +52,12 @@
 # Redirect URLs without .html to .html versions
 
 [[redirects]]
+  from = "/es/coaching-con-psicologos"
+  to = "/es/coaching-con-psicologos.html"
+  status = 301
+
+
+[[redirects]]
   from = "/journaling-prompts-for-anxiety"
   to = "/journaling-prompts-for-anxiety.html"
   status = 301
