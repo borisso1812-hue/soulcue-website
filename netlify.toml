@@ -148,6 +148,19 @@
   status = 301
   force = true
 
+# 2026-10-28: Spanish anxiety article moved to match "cómo calmar la ansiedad"
+[[redirects]]
+  from = "/es/como-manejar-la-ansiedad.html"
+  to = "/es/como-calmar-la-ansiedad.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/como-manejar-la-ansiedad"
+  to = "/es/como-calmar-la-ansiedad.html"
+  status = 301
+  force = true
+
 # Redirect URLs without .html to .html versions
 
 [[redirects]]
