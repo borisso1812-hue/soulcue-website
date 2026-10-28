@@ -49,6 +49,105 @@
   status = 301
   force = true
 
+
+# SEO cleanup 2026-10-28: test pages and duplicate self-care articles consolidated
+
+[[redirects]]
+  from = "/linking-test-article-two-building-emotional-connections-that-last.html"
+  to = "/how-to-build-emotional-resilience.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/linking-test-article-two-building-emotional-connections-that-last"
+  to = "/how-to-build-emotional-resilience.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/menu-preservation-test-article-how-emotional-wellness-routines-stay-consistent-o.html"
+  to = "/self-care-ideas-for-mental-health.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/menu-preservation-test-article-how-emotional-wellness-routines-stay-consistent-o"
+  to = "/self-care-ideas-for-mental-health.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/menu-preservation-test-article-how-soulcue-helps-you-maintain-emotional-balance-.html"
+  to = "/mood-journal-app.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/menu-preservation-test-article-how-soulcue-helps-you-maintain-emotional-balance-"
+  to = "/mood-journal-app.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/background-linking-test-how-soulcue-connects-your-emotional-patterns-behind-the-.html"
+  to = "/mood-journal-app.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/background-linking-test-how-soulcue-connects-your-emotional-patterns-behind-the-"
+  to = "/mood-journal-app.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/15-emotional-self-care-ideas-to-boost-your-mental-wellness-every-day.html"
+  to = "/self-care-ideas-for-mental-health.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/15-emotional-self-care-ideas-to-boost-your-mental-wellness-every-day"
+  to = "/self-care-ideas-for-mental-health.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/25-self-care-ideas-to-boost-your-emotional-wellness-every-day.html"
+  to = "/self-care-ideas-for-mental-health.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/25-self-care-ideas-to-boost-your-emotional-wellness-every-day"
+  to = "/self-care-ideas-for-mental-health.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/self-care-ideas-to-boost-your-emotional-wellness-every-day.html"
+  to = "/self-care-ideas-for-mental-health.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/self-care-ideas-to-boost-your-emotional-wellness-every-day"
+  to = "/self-care-ideas-for-mental-health.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/the-ultimate-list-of-self-care-practices-to-boost-your-emotional-wellness.html"
+  to = "/self-care-ideas-for-mental-health.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/the-ultimate-list-of-self-care-practices-to-boost-your-emotional-wellness"
+  to = "/self-care-ideas-for-mental-health.html"
+  status = 301
+  force = true
+
 # Redirect URLs without .html to .html versions
 
 [[redirects]]
