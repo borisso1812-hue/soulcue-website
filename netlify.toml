@@ -1,4 +1,3 @@
-# Link headers for AI agent discovery (RFC 8288)
 [[headers]]
   for = "/"
   [headers.values]
@@ -29,242 +28,6 @@
     Content-Type = "text/markdown; charset=utf-8"
     Access-Control-Allow-Origin = "*"
 
-[[redirects]]
-  from = "http://www.soulcue.org/*"
-  to = "https://soulcue.org/:splat"
-  status = 301
-  force = true
-
-
-[[redirects]]
-  from = "https://www.soulcue.org/*"
-  to = "https://soulcue.org/:splat"
-  status = 301
-  force = true
-
-
-[[redirects]]
-  from = "http://soulcue.org/*"
-  to = "https://soulcue.org/:splat"
-  status = 301
-  force = true
-
-
-# SEO cleanup 2026-10-28: test pages and duplicate self-care articles consolidated
-
-[[redirects]]
-  from = "/linking-test-article-two-building-emotional-connections-that-last.html"
-  to = "/how-to-build-emotional-resilience.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/linking-test-article-two-building-emotional-connections-that-last"
-  to = "/how-to-build-emotional-resilience.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/menu-preservation-test-article-how-emotional-wellness-routines-stay-consistent-o.html"
-  to = "/self-care-ideas-for-mental-health.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/menu-preservation-test-article-how-emotional-wellness-routines-stay-consistent-o"
-  to = "/self-care-ideas-for-mental-health.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/menu-preservation-test-article-how-soulcue-helps-you-maintain-emotional-balance-.html"
-  to = "/mood-journal-app.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/menu-preservation-test-article-how-soulcue-helps-you-maintain-emotional-balance-"
-  to = "/mood-journal-app.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/background-linking-test-how-soulcue-connects-your-emotional-patterns-behind-the-.html"
-  to = "/mood-journal-app.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/background-linking-test-how-soulcue-connects-your-emotional-patterns-behind-the-"
-  to = "/mood-journal-app.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/15-emotional-self-care-ideas-to-boost-your-mental-wellness-every-day.html"
-  to = "/self-care-ideas-for-mental-health.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/15-emotional-self-care-ideas-to-boost-your-mental-wellness-every-day"
-  to = "/self-care-ideas-for-mental-health.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/25-self-care-ideas-to-boost-your-emotional-wellness-every-day.html"
-  to = "/self-care-ideas-for-mental-health.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/25-self-care-ideas-to-boost-your-emotional-wellness-every-day"
-  to = "/self-care-ideas-for-mental-health.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/self-care-ideas-to-boost-your-emotional-wellness-every-day.html"
-  to = "/self-care-ideas-for-mental-health.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/self-care-ideas-to-boost-your-emotional-wellness-every-day"
-  to = "/self-care-ideas-for-mental-health.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/the-ultimate-list-of-self-care-practices-to-boost-your-emotional-wellness.html"
-  to = "/self-care-ideas-for-mental-health.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/the-ultimate-list-of-self-care-practices-to-boost-your-emotional-wellness"
-  to = "/self-care-ideas-for-mental-health.html"
-  status = 301
-  force = true
-
-# 2026-10-28: Spanish anxiety article moved to match "cómo calmar la ansiedad"
-[[redirects]]
-  from = "/es/como-manejar-la-ansiedad.html"
-  to = "/es/como-calmar-la-ansiedad.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/es/como-manejar-la-ansiedad"
-  to = "/es/como-calmar-la-ansiedad.html"
-  status = 301
-  force = true
-
-# Redirect URLs without .html to .html versions
-
-[[redirects]]
-  from = "/journaling-prompts-for-anxiety"
-  to = "/journaling-prompts-for-anxiety.html"
-  status = 301
-
-
-[[redirects]]
-  from = "/why-do-i-feel-anxious-for-no-reason"
-  to = "/why-do-i-feel-anxious-for-no-reason.html"
-  status = 301
-
-
-[[redirects]]
-  from = "/how-to-stop-overthinking"
-  to = "/how-to-stop-overthinking.html"
-  status = 301
-
-
-[[redirects]]
-  from = "/how-to-deal-with-anxiety"
-  to = "/how-to-deal-with-anxiety.html"
-  status = 301
-
-
-[[redirects]]
-  from = "/how-to-process-emotions"
-  to = "/how-to-process-emotions.html"
-  status = 301
-
-
-[[redirects]]
-  from = "/emotional-regulation-techniques"
-  to = "/emotional-regulation-techniques.html"
-  status = 301
-
-
-[[redirects]]
-  from = "/emotional-triggers"
-  to = "/emotional-triggers.html"
-  status = 301
-
-
-[[redirects]]
-  from = "/mood-journal-app"
-  to = "/mood-journal-app.html"
-  status = 301
-
-
-[[redirects]]
-  from = "/signs-of-emotional-burnout"
-  to = "/signs-of-emotional-burnout.html"
-  status = 301
-
-
-[[redirects]]
-  from = "/what-is-emotional-coaching"
-  to = "/what-is-emotional-coaching.html"
-  status = 301
-
-
-[[redirects]]
-  from = "/grounding-techniques-for-anxiety"
-  to = "/grounding-techniques-for-anxiety.html"
-  status = 301
-
-
-[[redirects]]
-  from = "/overthinking-test"
-  to = "/overthinking-test.html"
-  status = 301
-
-
-[[redirects]]
-  from = "/guides"
-  to = "/guides.html"
-  status = 301
-
-
-[[redirects]]
-  from = "/about"
-  to = "/about.html"
-  status = 301
-
-
-[[redirects]]
-  from = "/how-to-build-emotional-resilience"
-  to = "/how-to-build-emotional-resilience.html"
-  status = 301
-
-
-[[redirects]]
-  from = "/self-care-ideas-for-mental-health"
-  to = "/self-care-ideas-for-mental-health.html"
-  status = 301
-
-
-[[redirects]]
-  from = "/how-to-stop-comparing-yourself-to-others"
-  to = "/how-to-stop-comparing-yourself-to-others.html"
-  status = 301
-
-
 [[headers]]
   for = "/images/*"
   [headers.values]
@@ -287,3 +50,437 @@
   for = "/robots.txt"
   [headers.values]
     Cache-Control = "public, max-age=86400"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    X-Robots-Tag = "index, follow"
+
+# Clean URLs (2026-11-02): pages are served without .html; .html URLs 301 to the clean ones.
+[[redirects]]
+  from = "http://www.soulcue.org/*"
+  to = "https://soulcue.org/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.soulcue.org/*"
+  to = "https://soulcue.org/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://soulcue.org/*"
+  to = "https://soulcue.org/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/linking-test-article-two-building-emotional-connections-that-last.html"
+  to = "/how-to-build-emotional-resilience"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/linking-test-article-two-building-emotional-connections-that-last"
+  to = "/how-to-build-emotional-resilience"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/menu-preservation-test-article-how-emotional-wellness-routines-stay-consistent-o.html"
+  to = "/self-care-ideas-for-mental-health"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/menu-preservation-test-article-how-emotional-wellness-routines-stay-consistent-o"
+  to = "/self-care-ideas-for-mental-health"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/menu-preservation-test-article-how-soulcue-helps-you-maintain-emotional-balance-.html"
+  to = "/mood-journal-app"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/menu-preservation-test-article-how-soulcue-helps-you-maintain-emotional-balance-"
+  to = "/mood-journal-app"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/background-linking-test-how-soulcue-connects-your-emotional-patterns-behind-the-.html"
+  to = "/mood-journal-app"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/background-linking-test-how-soulcue-connects-your-emotional-patterns-behind-the-"
+  to = "/mood-journal-app"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/15-emotional-self-care-ideas-to-boost-your-mental-wellness-every-day.html"
+  to = "/self-care-ideas-for-mental-health"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/15-emotional-self-care-ideas-to-boost-your-mental-wellness-every-day"
+  to = "/self-care-ideas-for-mental-health"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/25-self-care-ideas-to-boost-your-emotional-wellness-every-day.html"
+  to = "/self-care-ideas-for-mental-health"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/25-self-care-ideas-to-boost-your-emotional-wellness-every-day"
+  to = "/self-care-ideas-for-mental-health"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/self-care-ideas-to-boost-your-emotional-wellness-every-day.html"
+  to = "/self-care-ideas-for-mental-health"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/self-care-ideas-to-boost-your-emotional-wellness-every-day"
+  to = "/self-care-ideas-for-mental-health"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/the-ultimate-list-of-self-care-practices-to-boost-your-emotional-wellness.html"
+  to = "/self-care-ideas-for-mental-health"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/the-ultimate-list-of-self-care-practices-to-boost-your-emotional-wellness"
+  to = "/self-care-ideas-for-mental-health"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/como-manejar-la-ansiedad.html"
+  to = "/es/como-calmar-la-ansiedad"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/como-manejar-la-ansiedad"
+  to = "/es/como-calmar-la-ansiedad"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/about.html"
+  to = "/about"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/coping-defense-mechanisms-what-they-are-and-how-to-build-healthier-habits.html"
+  to = "/coping-defense-mechanisms-what-they-are-and-how-to-build-healthier-habits"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/emotional-regulation-techniques.html"
+  to = "/emotional-regulation-techniques"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/emotional-triggers-meaning-what-they-are-and-how-to-take-back-control.html"
+  to = "/emotional-triggers-meaning-what-they-are-and-how-to-take-back-control"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/emotional-triggers.html"
+  to = "/emotional-triggers"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/acerca.html"
+  to = "/es/acerca"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/app-diario-de-humor.html"
+  to = "/es/app-diario-de-humor"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/autoconocimiento.html"
+  to = "/es/autoconocimiento"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/como-calmar-la-ansiedad.html"
+  to = "/es/como-calmar-la-ansiedad"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/como-construir-resiliencia-emocional.html"
+  to = "/es/como-construir-resiliencia-emocional"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/como-dejar-de-compararte-con-otros.html"
+  to = "/es/como-dejar-de-compararte-con-otros"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/como-dejar-de-pensar-demasiado.html"
+  to = "/es/como-dejar-de-pensar-demasiado"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/como-mejorar-la-salud-mental.html"
+  to = "/es/como-mejorar-la-salud-mental"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/como-procesar-las-emociones.html"
+  to = "/es/como-procesar-las-emociones"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/detonantes-emocionales.html"
+  to = "/es/detonantes-emocionales"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/diario-emocional.html"
+  to = "/es/diario-emocional"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/guias.html"
+  to = "/es/guias"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/ideas-autocuidado-salud-mental.html"
+  to = "/es/ideas-autocuidado-salud-mental"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/index.html"
+  to = "/es/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/inteligencia-emocional.html"
+  to = "/es/inteligencia-emocional"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/por-que-me-siento-ansioso-sin-razon.html"
+  to = "/es/por-que-me-siento-ansioso-sin-razon"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/preguntas-para-diario-ansiedad.html"
+  to = "/es/preguntas-para-diario-ansiedad"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/que-es-el-autocuidado.html"
+  to = "/es/que-es-el-autocuidado"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/que-es-el-coaching-emocional.html"
+  to = "/es/que-es-el-coaching-emocional"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/que-es-la-salud-emocional.html"
+  to = "/es/que-es-la-salud-emocional"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/senales-de-agotamiento-emocional.html"
+  to = "/es/senales-de-agotamiento-emocional"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/tecnicas-de-grounding-para-ansiedad.html"
+  to = "/es/tecnicas-de-grounding-para-ansiedad"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/tecnicas-de-regulacion-emocional.html"
+  to = "/es/tecnicas-de-regulacion-emocional"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/test-de-autoconocimiento.html"
+  to = "/es/test-de-autoconocimiento"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/test-de-inteligencia-emocional.html"
+  to = "/es/test-de-inteligencia-emocional"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/test-pensar-demasiado.html"
+  to = "/es/test-pensar-demasiado"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/tests.html"
+  to = "/es/tests"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/tipos-de-emociones.html"
+  to = "/es/tipos-de-emociones"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/grounding-techniques-for-anxiety.html"
+  to = "/grounding-techniques-for-anxiety"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/guides.html"
+  to = "/guides"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/how-to-build-emotional-resilience.html"
+  to = "/how-to-build-emotional-resilience"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/how-to-deal-with-anxiety.html"
+  to = "/how-to-deal-with-anxiety"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/how-to-process-emotions.html"
+  to = "/how-to-process-emotions"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/how-to-stop-comparing-yourself-to-others.html"
+  to = "/how-to-stop-comparing-yourself-to-others"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/how-to-stop-overthinking.html"
+  to = "/how-to-stop-overthinking"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/journaling-prompts-for-anxiety.html"
+  to = "/journaling-prompts-for-anxiety"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/mood-journal-app.html"
+  to = "/mood-journal-app"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/overthinking-test.html"
+  to = "/overthinking-test"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/repression-as-a-coping-mechanism-what-it-is-and-how-to-move-beyond-it.html"
+  to = "/repression-as-a-coping-mechanism-what-it-is-and-how-to-move-beyond-it"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/self-care-ideas-for-mental-health.html"
+  to = "/self-care-ideas-for-mental-health"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/signs-of-emotional-burnout.html"
+  to = "/signs-of-emotional-burnout"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/understanding-emotional-triggers-how-to-recognize-and-respond-to-them.html"
+  to = "/understanding-emotional-triggers-how-to-recognize-and-respond-to-them"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/what-is-emotional-coaching.html"
+  to = "/what-is-emotional-coaching"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/why-do-i-feel-anxious-for-no-reason.html"
+  to = "/why-do-i-feel-anxious-for-no-reason"
+  status = 301
+  force = true

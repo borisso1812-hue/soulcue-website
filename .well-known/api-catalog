@@ -2,8 +2,8 @@
   "linkset": [
     {
       "anchor": "https://soulcue.org/",
-      "https://soulcue.org/about.html": [{"href": "https://soulcue.org/about.html"}],
-      "service-doc": [{"href": "https://soulcue.org/about.html", "type": "text/html"}],
+      "https://soulcue.org/about": [{"href": "https://soulcue.org/about"}],
+      "service-doc": [{"href": "https://soulcue.org/about", "type": "text/html"}],
       "describedby": [{"href": "https://soulcue.org/llms.txt", "type": "text/plain"}]
     }
   ]

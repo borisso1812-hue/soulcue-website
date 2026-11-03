@@ -19,41 +19,41 @@ Key features:
 
 The following articles are available on this site covering emotional health, anxiety, and personal growth:
 
-- [How to Stop Overthinking](https://soulcue.org/how-to-stop-overthinking.html) — Practical techniques for breaking the overthinking cycle
-- [How to Deal with Anxiety](https://soulcue.org/how-to-deal-with-anxiety.html) — Evidence-based approaches to managing anxiety
-- [Why Do I Feel Anxious for No Reason?](https://soulcue.org/why-do-i-feel-anxious-for-no-reason.html) — 9 real causes of unexplained anxiety
-- [Grounding Techniques for Anxiety](https://soulcue.org/grounding-techniques-for-anxiety.html) — 10 techniques that work in the moment
-- [Journaling Prompts for Anxiety](https://soulcue.org/journaling-prompts-for-anxiety.html) — 50 prompts organised by situation
-- [Signs of Emotional Burnout](https://soulcue.org/signs-of-emotional-burnout.html) — 12 signs and a practical recovery plan
-- [How to Process Emotions](https://soulcue.org/how-to-process-emotions.html) — How to move through emotions without getting stuck
-- [Emotional Regulation Techniques](https://soulcue.org/emotional-regulation-techniques.html) — Techniques that actually work
-- [Emotional Triggers](https://soulcue.org/emotional-triggers.html) — What they are and how to work with them
-- [How to Build Emotional Resilience](https://soulcue.org/how-to-build-emotional-resilience.html) — 8 practical ways to become more resilient
-- [What Is Emotional Coaching?](https://soulcue.org/what-is-emotional-coaching.html) — How it works and how it differs from therapy
-- [Self-Care Ideas for Mental Health](https://soulcue.org/self-care-ideas-for-mental-health.html) — 40 ideas organised by what you actually need
-- [How to Stop Comparing Yourself to Others](https://soulcue.org/how-to-stop-comparing-yourself-to-others.html) — What actually works
-- [Mood Journal App](https://soulcue.org/mood-journal-app.html) — How tracking emotions changes everything
+- [How to Stop Overthinking](https://soulcue.org/how-to-stop-overthinking) — Practical techniques for breaking the overthinking cycle
+- [How to Deal with Anxiety](https://soulcue.org/how-to-deal-with-anxiety) — Evidence-based approaches to managing anxiety
+- [Why Do I Feel Anxious for No Reason?](https://soulcue.org/why-do-i-feel-anxious-for-no-reason) — 9 real causes of unexplained anxiety
+- [Grounding Techniques for Anxiety](https://soulcue.org/grounding-techniques-for-anxiety) — 10 techniques that work in the moment
+- [Journaling Prompts for Anxiety](https://soulcue.org/journaling-prompts-for-anxiety) — 50 prompts organised by situation
+- [Signs of Emotional Burnout](https://soulcue.org/signs-of-emotional-burnout) — 12 signs and a practical recovery plan
+- [How to Process Emotions](https://soulcue.org/how-to-process-emotions) — How to move through emotions without getting stuck
+- [Emotional Regulation Techniques](https://soulcue.org/emotional-regulation-techniques) — Techniques that actually work
+- [Emotional Triggers](https://soulcue.org/emotional-triggers) — What they are and how to work with them
+- [How to Build Emotional Resilience](https://soulcue.org/how-to-build-emotional-resilience) — 8 practical ways to become more resilient
+- [What Is Emotional Coaching?](https://soulcue.org/what-is-emotional-coaching) — How it works and how it differs from therapy
+- [Self-Care Ideas for Mental Health](https://soulcue.org/self-care-ideas-for-mental-health) — 40 ideas organised by what you actually need
+- [How to Stop Comparing Yourself to Others](https://soulcue.org/how-to-stop-comparing-yourself-to-others) — What actually works
+- [Mood Journal App](https://soulcue.org/mood-journal-app) — How tracking emotions changes everything
 
 ## Guías en español
 
-- [Test de inteligencia emocional](https://soulcue.org/es/test-de-inteligencia-emocional.html) — 20 preguntas, perfil por los 5 componentes de Goleman
-- [Test de autoconocimiento](https://soulcue.org/es/test-de-autoconocimiento.html) — 15 preguntas, 5 áreas
-- [Test: ¿piensas demasiado?](https://soulcue.org/es/test-pensar-demasiado.html) — 10 preguntas
-- [Inteligencia emocional](https://soulcue.org/es/inteligencia-emocional.html) — Qué es, 5 componentes y ejercicios
-- [Autoconocimiento](https://soulcue.org/es/autoconocimiento.html) — 10 ejercicios y 30 preguntas
-- [Cómo calmar la ansiedad](https://soulcue.org/es/como-calmar-la-ansiedad.html) — 12 técnicas para el momento y el día a día
-- [Regulación emocional](https://soulcue.org/es/tecnicas-de-regulacion-emocional.html) — Qué es y 10 técnicas
-- [Tipos de emociones](https://soulcue.org/es/tipos-de-emociones.html) — Emociones básicas, positivas y negativas
-- [Qué es el autocuidado](https://soulcue.org/es/que-es-el-autocuidado.html) — Tipos, ejemplos y autocuidado emocional
-- [Diario emocional](https://soulcue.org/es/diario-emocional.html) — Cómo llevarlo y 30 preguntas
-- [Cómo mejorar tu salud mental](https://soulcue.org/es/como-mejorar-la-salud-mental.html) — 12 hábitos
-- [Qué es la salud emocional](https://soulcue.org/es/que-es-la-salud-emocional.html) — 10 ejemplos
-- [Todas las guías](https://soulcue.org/es/guias.html)
+- [Test de inteligencia emocional](https://soulcue.org/es/test-de-inteligencia-emocional) — 20 preguntas, perfil por los 5 componentes de Goleman
+- [Test de autoconocimiento](https://soulcue.org/es/test-de-autoconocimiento) — 15 preguntas, 5 áreas
+- [Test: ¿piensas demasiado?](https://soulcue.org/es/test-pensar-demasiado) — 10 preguntas
+- [Inteligencia emocional](https://soulcue.org/es/inteligencia-emocional) — Qué es, 5 componentes y ejercicios
+- [Autoconocimiento](https://soulcue.org/es/autoconocimiento) — 10 ejercicios y 30 preguntas
+- [Cómo calmar la ansiedad](https://soulcue.org/es/como-calmar-la-ansiedad) — 12 técnicas para el momento y el día a día
+- [Regulación emocional](https://soulcue.org/es/tecnicas-de-regulacion-emocional) — Qué es y 10 técnicas
+- [Tipos de emociones](https://soulcue.org/es/tipos-de-emociones) — Emociones básicas, positivas y negativas
+- [Qué es el autocuidado](https://soulcue.org/es/que-es-el-autocuidado) — Tipos, ejemplos y autocuidado emocional
+- [Diario emocional](https://soulcue.org/es/diario-emocional) — Cómo llevarlo y 30 preguntas
+- [Cómo mejorar tu salud mental](https://soulcue.org/es/como-mejorar-la-salud-mental) — 12 hábitos
+- [Qué es la salud emocional](https://soulcue.org/es/que-es-la-salud-emocional) — 10 ejemplos
+- [Todas las guías](https://soulcue.org/es/guias)
 
 ## About Page
 
 Full description of SoulCue, how it works, and how it differs from therapy and other apps:
-https://soulcue.org/about.html
+https://soulcue.org/about
 
 ## Content Usage
 
