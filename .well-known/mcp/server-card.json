@@ -15,10 +15,10 @@
   },
   "resources": [
     {"uri": "https://soulcue.org/", "name": "SoulCue Homepage", "mimeType": "text/html"},
-    {"uri": "https://soulcue.org/about.html", "name": "About SoulCue", "mimeType": "text/html"},
+    {"uri": "https://soulcue.org/about", "name": "About SoulCue", "mimeType": "text/html"},
     {"uri": "https://soulcue.org/llms.txt", "name": "LLM Content Index", "mimeType": "text/plain"},
     {"uri": "https://soulcue.org/sitemap.xml", "name": "Sitemap", "mimeType": "application/xml"},
-    {"uri": "https://soulcue.org/guides.html", "name": "All Guides", "mimeType": "text/html"}
+    {"uri": "https://soulcue.org/guides", "name": "All Guides", "mimeType": "text/html"}
   ],
   "contentPolicy": {
     "search": true,

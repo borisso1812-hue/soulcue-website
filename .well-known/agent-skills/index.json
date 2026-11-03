@@ -21,7 +21,7 @@
       "name": "about",
       "type": "resource",
       "description": "About page describing what SoulCue is, how it works, and who it is for",
-      "url": "https://soulcue.org/about.html",
+      "url": "https://soulcue.org/about",
       "sha256": "2212b84a2a6ffe239872c76d266680d86f2438391034b2eb19604f17104f6968"
     }
   ]
