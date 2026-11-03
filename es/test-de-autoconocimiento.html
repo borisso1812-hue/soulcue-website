@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3N4WH1E76S"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-3N4WH1E76S');</script>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test de Autoconocimiento Gratis: ¿Qué Tanto te Conoces? | SoulCue</title>
+  <meta name="description" content="Test de autoconocimiento gratis: 15 preguntas sobre tus emociones, valores, necesidades, patrones y fortalezas, con ejercicios para conocerte mejor.">
+  <link rel="canonical" href="https://soulcue.org/es/test-de-autoconocimiento.html">
+  <link rel="alternate" hreflang="es" href="https://soulcue.org/es/test-de-autoconocimiento.html">
+  <link rel="alternate" hreflang="x-default" href="https://soulcue.org/es/test-de-autoconocimiento.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:title" content="Test de autoconocimiento: ¿qué tanto te conoces?">
+  <meta property="og:description" content="Test de autoconocimiento gratis: 15 preguntas sobre tus emociones, valores, necesidades, patrones y fortalezas, con ejercicios para conocerte mejor.">
+  <meta property="og:url" content="https://soulcue.org/es/test-de-autoconocimiento.html">
+  <meta property="og:image" content="https://soulcue.org/images/app-hero.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Quiz", "name": "Test de autoconocimiento", "description": "Test de autoconocimiento gratis: 15 preguntas sobre tus emociones, valores, necesidades, patrones y fortalezas, con ejercicios para conocerte mejor.", "url": "https://soulcue.org/es/test-de-autoconocimiento.html", "inLanguage": "es", "isAccessibleForFree": true, "author": {"@type": "Organization", "name": "SoulCue", "url": "https://soulcue.org/"}, "about": {"@type": "Thing", "name": "Autoconocimiento"}, "educationalLevel": "beginner"}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Qué es un test de autoconocimiento?", "acceptedAnswer": {"@type": "Answer", "text": "Es un cuestionario que te ayuda a reflexionar sobre cuánto conoces tus emociones, valores, necesidades, patrones y fortalezas. No da una etiqueta: te muestra en qué áreas tienes más claridad y en cuáles conviene explorar."}}, {"@type": "Question", "name": "¿Cuánto tarda?", "acceptedAnswer": {"@type": "Answer", "text": "Unos 3 minutos. Son 15 afirmaciones con cinco opciones de respuesta."}}, {"@type": "Question", "name": "¿Mis respuestas se guardan?", "acceptedAnswer": {"@type": "Answer", "text": "No. El test funciona en tu navegador y tus respuestas no se envían ni se guardan."}}, {"@type": "Question", "name": "¿Cómo puedo mejorar mi autoconocimiento?", "acceptedAnswer": {"@type": "Answer", "text": "Con práctica: un check-in emocional diario, escribir en un diario, identificar tus valores, pedir retroalimentación y reflexionar con curiosidad sobre tus reacciones."}}]}</script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --purple: #7B3FE4; --purple-light: #EDE9FF; --purple-dark: #5a2db0;
+      --bg: #F7F5FF; --text: #1A1A1A; --text-2: #555;
+      --green: #22C55E; --yellow: #F59E0B; --red: #EF4444;
+    }
+    body { font-family: 'DM Sans', sans-serif; color: var(--text); background: #fff; }
+
+    /* NAV */
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 0 40px; height: 64px; display: flex; align-items: center; justify-content: space-between; background: rgba(255,255,255,0.95); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(123,63,228,0.08); gap: 32px; }
+    .nav-logo { font-family: 'DM Serif Display', serif; font-size: 22px; color: var(--purple); text-decoration: none; display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+    .nav-links { display: flex; gap: 4px; align-items: center; flex: 1; }
+    .nav-links a { text-decoration: none; color: #444; font-size: 14px; font-weight: 500; padding: 8px 14px; border-radius: 8px; transition: background 0.15s, color 0.15s; }
+    .nav-links a:hover { background: #F5F5F5; color: #1A1A1A; }
+    .nav-links a.active { color: var(--purple); background: var(--purple-light); }
+    .nav-cta { background: var(--purple); color: white; padding: 10px 22px; border-radius: 50px; text-decoration: none; font-weight: 500; font-size: 14px; white-space: nowrap; flex-shrink: 0; }
+    .nav-burger { display: none; background: none; border: none; font-size: 22px; cursor: pointer; }
+    @media (max-width: 768px) {
+      nav { padding: 0 20px; }
+      .nav-links { display: none; }
+      .nav-links.open { display: flex; position: fixed; top: 64px; left: 0; right: 0; background: white; flex-direction: column; padding: 12px; gap: 4px; border-bottom: 1px solid #eee; z-index: 99; box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+      .nav-burger { display: block; }
+    }
+
+    /* HERO */
+    .quiz-hero {
+      background: linear-gradient(160deg, #f0e8ff 0%, var(--bg) 60%, #fff 100%);
+      padding: 100px 40px 48px;
+      text-align: center;
+    }
+    .quiz-tag { display: inline-block; background: var(--purple-light); color: var(--purple); padding: 6px 16px; border-radius: 50px; font-size: 13px; font-weight: 500; margin-bottom: 20px; }
+    .quiz-hero h1 { font-family: 'DM Serif Display', serif; font-size: clamp(32px, 5vw, 52px); line-height: 1.15; max-width: 680px; margin: 0 auto 16px; }
+    .quiz-hero p { font-size: 17px; color: var(--text-2); max-width: 480px; margin: 0 auto 32px; line-height: 1.7; }
+    .quiz-meta { display: flex; gap: 24px; justify-content: center; font-size: 14px; color: #888; }
+    .quiz-meta span::before { margin-right: 6px; }
+
+    /* QUIZ CONTAINER */
+    .quiz-wrap { max-width: 680px; margin: 0 auto; padding: 48px 40px 80px; }
+
+    /* PROGRESS */
+    .progress-bar-wrap { margin-bottom: 32px; }
+    .progress-label { display: flex; justify-content: space-between; font-size: 13px; color: #888; margin-bottom: 8px; }
+    .progress-bar { height: 6px; background: #E5E7EB; border-radius: 3px; overflow: hidden; }
+    .progress-fill { height: 100%; background: var(--purple); border-radius: 3px; transition: width 0.4s ease; }
+
+    /* QUESTION CARD */
+    .question-card { display: none; animation: fadeIn 0.3s ease; }
+    .question-card.active { display: block; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+
+    .question-num { font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--purple); margin-bottom: 12px; }
+    .question-text { font-family: 'DM Serif Display', serif; font-size: clamp(20px, 3vw, 26px); line-height: 1.3; margin-bottom: 32px; color: var(--text); }
+
+    .options { display: flex; flex-direction: column; gap: 12px; }
+    .option {
+      background: white; border: 2px solid #E5E7EB; border-radius: 16px;
+      padding: 16px 20px; cursor: pointer; font-size: 16px; font-weight: 400;
+      text-align: left; transition: all 0.15s; color: var(--text);
+      display: flex; align-items: center; gap: 12px;
+    }
+    .option:hover { border-color: var(--purple); background: var(--purple-light); }
+    .option.selected { border-color: var(--purple); background: var(--purple-light); color: var(--purple); font-weight: 500; }
+    .option-dot {
+      width: 20px; height: 20px; border-radius: 50%; border: 2px solid #D1D5DB;
+      flex-shrink: 0; transition: all 0.15s;
+    }
+    .option.selected .option-dot { background: var(--purple); border-color: var(--purple); }
+
+    .nav-btns { display: flex; gap: 12px; margin-top: 32px; }
+    .btn-back { background: white; border: 2px solid #E5E7EB; color: #444; padding: 14px 28px; border-radius: 50px; font-size: 15px; font-weight: 500; cursor: pointer; transition: all 0.15s; }
+    .btn-back:hover { border-color: #999; }
+    .btn-next { background: var(--purple); color: white; padding: 14px 36px; border-radius: 50px; font-size: 15px; font-weight: 600; cursor: pointer; border: none; transition: all 0.15s; opacity: 0.4; pointer-events: none; }
+    .btn-next.enabled { opacity: 1; pointer-events: all; }
+    .btn-next.enabled:hover { background: var(--purple-dark); }
+
+    /* RESULT */
+    .result-card { display: none; text-align: center; animation: fadeIn 0.4s ease; }
+    .result-card.active { display: block; }
+    .result-emoji { font-size: 72px; margin-bottom: 16px; }
+    .result-score { font-size: 14px; color: #888; margin-bottom: 8px; }
+    .result-type { font-family: 'DM Serif Display', serif; font-size: clamp(28px, 4vw, 40px); margin-bottom: 16px; color: var(--text); }
+    .result-badge { display: inline-block; padding: 6px 20px; border-radius: 50px; font-size: 13px; font-weight: 600; margin-bottom: 24px; }
+    .badge-low { background: #DCFCE7; color: #16A34A; }
+    .badge-med { background: #FEF9C3; color: #CA8A04; }
+    .badge-high { background: #FEE2E2; color: #DC2626; }
+    .result-desc { font-size: 17px; line-height: 1.8; color: var(--text-2); max-width: 520px; margin: 0 auto 32px; text-align: left; }
+    .result-tips { background: var(--bg); border-radius: 20px; padding: 28px 32px; text-align: left; margin-bottom: 32px; }
+    .result-tips h3 { font-family: 'DM Serif Display', serif; font-size: 20px; margin-bottom: 16px; }
+    .result-tips ul { padding-left: 20px; display: flex; flex-direction: column; gap: 10px; }
+    .result-tips ul li { font-size: 15px; line-height: 1.6; color: var(--text-2); }
+    .result-cta { background: linear-gradient(135deg, var(--purple) 0%, var(--purple-dark) 100%); border-radius: 24px; padding: 40px 32px; margin-top: 8px; }
+    .result-cta h3 { font-family: 'DM Serif Display', serif; font-size: 26px; color: white; margin-bottom: 10px; }
+    .result-cta p { font-size: 16px; color: rgba(255,255,255,0.8); margin-bottom: 24px; }
+    .btn-download { display: inline-flex; align-items: center; gap: 10px; background: white; color: var(--purple); padding: 16px 32px; border-radius: 50px; font-weight: 600; font-size: 16px; text-decoration: none; box-shadow: 0 8px 24px rgba(0,0,0,0.15); }
+    .btn-retake { background: none; border: none; color: rgba(255,255,255,0.7); font-size: 14px; cursor: pointer; margin-top: 16px; display: block; text-align: center; text-decoration: underline; }
+
+    footer { background: #1A1A1A; color: rgba(255,255,255,0.5); padding: 32px 40px; text-align: center; font-size: 14px; }
+    footer a { color: #EDE9FF; text-decoration: none; }
+
+    @media (max-width: 640px) {
+      .quiz-hero { padding: 90px 20px 36px; }
+      .quiz-wrap { padding: 36px 20px 60px; }
+      .result-tips { padding: 20px; }
+      .result-cta { padding: 28px 20px; }
+    }
+  
+    /* Lang switcher */
+    .lang-switcher {
+      display: flex; align-items: center; gap: 4px;
+      margin-left: 8px;
+    }
+    .lang-switcher a {
+      font-size: 12px; font-weight: 600; letter-spacing: 0.5px;
+      padding: 4px 8px; border-radius: 6px;
+      text-decoration: none; color: #888;
+      transition: all 0.15s;
+      border: 1px solid transparent;
+    }
+    .lang-switcher a.active-lang {
+      color: #7B3FE4; background: #EDE9FF;
+      border-color: rgba(123,63,228,0.2);
+    }
+    .lang-switcher a:hover:not(.active-lang) { color: #444; background: #F5F5F5; }
+    .lang-sep { color: #ddd; font-size: 12px; }
+
+  
+    .result-tips h4{font-size:15px;font-weight:600;color:#1A1A1A;margin:16px 0 6px}
+    .result-tips a,.seo-content a{color:#7B3FE4}
+    .dim-bars{text-align:left;background:#fff;border:1px solid #EDE9FF;border-radius:16px;padding:24px;margin:24px 0}
+    .dim-bars h3{font-size:16px;font-weight:600;margin-bottom:16px}
+    .dim-row{margin-bottom:14px}
+    .dim-label{display:flex;justify-content:space-between;font-size:14px;color:#444;margin-bottom:6px}
+    .dim-bar{height:10px;background:#EDE9FF;border-radius:6px;overflow:hidden}
+    .dim-fill{height:100%;background:linear-gradient(90deg,#9b6bf0,#7B3FE4);border-radius:6px}
+    .result-note{font-size:12px;color:#888;margin-top:20px}
+    .result-cta .btn-retake{display:block;margin:16px auto 0}
+    .option{width:100%}
+    .seo-content{max-width:720px;margin:0 auto;padding:40px 24px 80px}
+    .seo-content h2{font-family:'DM Serif Display',serif;font-size:26px;margin:40px 0 14px;color:#1A1A1A}
+    .seo-content p{font-size:16px;line-height:1.8;color:#333;margin-bottom:16px}
+    .seo-content ul{padding-left:22px;margin-bottom:16px}
+    .seo-content li{font-size:16px;line-height:1.7;color:#333;margin-bottom:6px}
+    .faq-section{background:#F9F7FF;border-radius:20px;padding:32px;margin:40px 0}
+    .faq-section h2{margin-top:0}
+    .faq-item{border-bottom:1px solid rgba(123,63,228,0.15);padding:16px 0}
+    .faq-item:last-child{border-bottom:none}
+    .faq-item h3{font-size:16px;font-weight:600;margin-bottom:8px}
+    .faq-item p{font-size:15px;color:#555;margin:0}
+    .related-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    @media(max-width:600px){.related-cards{grid-template-columns:1fr}.faq-section{padding:24px}}
+    .related-card{display:block;padding:16px;background:#F5F5F5;border-radius:12px;text-decoration:none;color:#1A1A1A !important;font-size:14px;font-weight:500}
+    .related-card:hover{background:#EDE9FF}
+  </style>
+</head>
+<body>
+<nav>
+  <a href="/" class="nav-logo"><img src="/images/logo.png" style="width:32px;height:32px;border-radius:8px;flex-shrink:0;" alt="SoulCue">SoulCue</a>
+  <div class="nav-links" id="navLinks">
+    <a href="/es/">Inicio</a><a href="/es/guias.html">Guías</a>
+    <a href="/es/tests.html">Tests</a><a href="/es/acerca.html">Acerca</a>
+    <div class="lang-switcher">
+      <a href="/overthinking-test.html">EN</a><span class="lang-sep">|</span>
+      <a href="/es/test-de-autoconocimiento.html" class="active-lang">ES</a>
+    </div>
+  </div>
+  <a href="https://apps.apple.com/us/app/soulcue-ai-growth-coach/id6754840010" class="nav-cta" target="_blank" rel="noopener">Descargar Gratis</a>
+  <button class="nav-burger" onclick="document.getElementById('navLinks').classList.toggle('open')">☰</button>
+</nav>
+<div class="quiz-hero">
+  <div class="quiz-tag">Test gratis · 3 minutos</div>
+  <h1>Test de autoconocimiento: ¿qué tanto te conoces?</h1>
+  <p>Explora cinco áreas de tu vida interior y descubre cuáles tienes claras y cuáles vale la pena observar. Sin etiquetas, con ejercicios prácticos.</p>
+  <div class="quiz-meta"><span>⏱ 3 min</span><span>📋 15 preguntas</span><span>✨ Resultado al instante</span></div>
+</div>
+<div class="quiz-wrap">
+  <div class="progress-bar-wrap" id="progressWrap">
+    <div class="progress-label"><span id="progressText"></span><span id="progressPct"></span></div>
+    <div class="progress-bar"><div class="progress-fill" id="progressFill" style="width:0%"></div></div>
+  </div>
+  <div id="quizQuestions"><noscript><p>Activa JavaScript en tu navegador para hacer el test.</p></noscript></div>
+  <div id="resultSection" style="display:none"></div>
+</div>
+<div class="seo-content">
+
+<h2>¿Qué mide este test de autoconocimiento?</h2>
+<p>El test explora cinco áreas de tu vida interior: <strong>emociones, valores, necesidades y energía, patrones y detonantes, y fortalezas y límites</strong>. Cada área tiene tres afirmaciones. Al final ves tu mapa de autoconocimiento y ejercicios para las áreas que tienes menos claras.</p>
+<p>No hay respuestas correctas ni incorrectas. El objetivo no es ponerte una nota, sino mostrarte dónde mirar.</p>
+
+<h2>Cómo sacarle provecho</h2>
+<ul>
+  <li><strong>Responde con honestidad,</strong> pensando en cómo eres en el día a día.</li>
+  <li><strong>Fíjate en las preguntas que te costaron más:</strong> suelen señalar justo lo que vale la pena explorar.</li>
+  <li><strong>Elige un solo ejercicio</strong> de los que te proponemos y practícalo una semana.</li>
+</ul>
+<p>Si quieres profundizar, en nuestra guía de <a href="/es/autoconocimiento.html">autoconocimiento</a> encontrarás 10 ejercicios, la ventana de Johari y 30 preguntas para tu diario.</p>
+
+<h2>Por qué el autoconocimiento importa</h2>
+<p>Conocerte te ayuda a decidir mejor, a poner límites con claridad, a entender tus reacciones y a relacionarte mejor con los demás. Es además la base de la <a href="/es/inteligencia-emocional.html">inteligencia emocional</a>. Si quieres medir esa parte también, prueba nuestro <a href="/es/test-de-inteligencia-emocional.html">test de inteligencia emocional</a>.</p>
+
+<h2>Lo que este test no es</h2>
+<p>Es una herramienta de reflexión, no un test de personalidad validado ni una evaluación psicológica. Tómalo como una invitación a observarte con curiosidad.</p>
+
+<div class="faq-section"><h2>Preguntas frecuentes</h2><div class="faq-item"><h3>¿Qué es un test de autoconocimiento?</h3><p>Es un cuestionario que te ayuda a reflexionar sobre cuánto conoces tus emociones, valores, necesidades, patrones y fortalezas. No da una etiqueta: te muestra en qué áreas tienes más claridad y en cuáles conviene explorar.</p></div><div class="faq-item"><h3>¿Cuánto tarda?</h3><p>Unos 3 minutos. Son 15 afirmaciones con cinco opciones de respuesta.</p></div><div class="faq-item"><h3>¿Mis respuestas se guardan?</h3><p>No. El test funciona en tu navegador y tus respuestas no se envían ni se guardan.</p></div><div class="faq-item"><h3>¿Cómo puedo mejorar mi autoconocimiento?</h3><p>Con práctica: un check-in emocional diario, escribir en un diario, identificar tus valores, pedir retroalimentación y reflexionar con curiosidad sobre tus reacciones.</p></div></div>
+<h2>También puede interesarte</h2><div class="related-cards"><a href="/es/autoconocimiento.html" class="related-card">→ Autoconocimiento: 10 ejercicios</a><a href="/es/test-de-inteligencia-emocional.html" class="related-card">→ Test de inteligencia emocional</a><a href="/es/diario-emocional.html" class="related-card">→ Diario emocional</a><a href="/es/detonantes-emocionales.html" class="related-card">→ Detonantes emocionales</a></div>
+</div>
+<footer><p>&copy; 2026 SoulCue &nbsp;·&nbsp; <a href="/es/">Inicio</a> &nbsp;·&nbsp; <a href="/es/guias.html">Guías</a> &nbsp;·&nbsp; <a href="/es/tests.html">Tests</a></p>
+<p style="margin-top:8px;font-size:12px;color:rgba(255,255,255,0.4);">Este test es una herramienta de reflexión personal, no un diagnóstico.</p></footer>
+<script>window.QUIZ={"id": "autoconocimiento", "scale": [["Casi nunca", 1], ["Pocas veces", 2], ["A veces", 3], ["A menudo", 4], ["Casi siempre", 5]], "scaleMin": 1, "scaleMax": 5, "totalMax": 75, "dimsTitle": "Tu mapa de autoconocimiento", "tipsTitle": "Ejercicios para tus dos áreas con más margen", "ctaTitle": "Conócete un poco más cada día", "ctaText": "SoulCue te hace las preguntas adecuadas cada día y te muestra tus patrones emocionales con el tiempo.", "dims": {"emo": {"name": "Emociones", "tips": ["Una vez al día, nota dónde sientes la emoción en el cuerpo antes de ponerle nombre.", "Usa la lista de <a href=\"/es/tipos-de-emociones.html\">tipos de emociones</a> para afinar la palabra.", "Practica los 5 pasos para <a href=\"/es/como-procesar-las-emociones.html\">procesar las emociones</a>."]}, "val": {"name": "Valores", "tips": ["Escribe 20 valores, quédate con 10, luego con 5 y al final con 3.", "Pregúntate cuánto tiempo de tu semana dedicas a esos tres valores.", "Antes de una decisión, pregúntate: ¿esto va con lo que más me importa?"]}, "nec": {"name": "Necesidades y energía", "tips": ["Durante una semana, anota qué te dio energía y qué te la quitó cada día.", "Aprende a notar tus señales de cansancio antes de agotarte.", "Revisa los tipos de <a href=\"/es/que-es-el-autocuidado.html\">autocuidado</a> y elige el que más descuidas."]}, "pat": {"name": "Patrones y detonantes", "tips": ["Cuando reacciones más fuerte de lo que querías, anota qué pasó antes.", "Aprende a reconocer tus <a href=\"/es/detonantes-emocionales.html\">detonantes emocionales</a>.", "Relee tu <a href=\"/es/diario-emocional.html\">diario emocional</a> cada dos semanas en busca de repeticiones."]}, "fue": {"name": "Fortalezas y límites", "tips": ["Pide a dos personas de confianza que te digan tu mayor fortaleza.", "Escribe tres cosas que te salen bien y una que te cuesta, sin juzgarte.", "Prueba los ejercicios de <a href=\"/es/autoconocimiento.html\">autoconocimiento</a>, como la ventana de Johari."]}}, "questions": [{"t": "Sé qué emoción siento la mayor parte del tiempo.", "d": "emo"}, {"t": "Noto en el cuerpo las señales de que algo me está afectando.", "d": "emo"}, {"t": "Me cuesta explicar lo que siento cuando alguien me lo pregunta.", "d": "emo", "rev": true}, {"t": "Podría nombrar mis tres valores más importantes.", "d": "val"}, {"t": "Mis decisiones importantes van de acuerdo con lo que valoro.", "d": "val"}, {"t": "Hago cosas solo para agradar a otros, aunque no quiera.", "d": "val", "rev": true}, {"t": "Sé qué actividades y personas me recargan de energía.", "d": "nec"}, {"t": "Me doy cuenta de que estoy cansado antes de agotarme.", "d": "nec"}, {"t": "Cuando estoy mal, me cuesta saber qué necesito.", "d": "nec", "rev": true}, {"t": "Conozco las situaciones que me hacen reaccionar más fuerte de lo que quisiera.", "d": "pat"}, {"t": "Reconozco cómo suelo actuar cuando estoy bajo estrés.", "d": "pat"}, {"t": "Repito los mismos errores sin entender por qué.", "d": "pat", "rev": true}, {"t": "Puedo nombrar mis principales fortalezas.", "d": "fue"}, {"t": "Acepto con calma las cosas que me cuestan.", "d": "fue"}, {"t": "Me sorprende cómo me describen los demás.", "d": "fue", "rev": true}], "bands": [{"max": 40, "emoji": "🔍", "badge": "badge-low", "label": "Explorando", "title": "Estás empezando a explorarte", "desc": "Todavía hay muchas cosas de ti que están por descubrir, y eso está bien: el autoconocimiento es un proceso, no un examen. Con ejercicios sencillos y algo de constancia, en pocas semanas vas a entender mucho mejor qué sientes, qué valoras y por qué reaccionas como reaccionas."}, {"max": 57, "emoji": "🧭", "badge": "badge-med", "label": "En camino", "title": "Te conoces bastante bien", "desc": "Tienes claridad en varias áreas de tu vida interior, aunque algunas todavía son más difusas. Prestar atención a esas áreas te ayudará a tomar decisiones más alineadas contigo y a reaccionar con más calma."}, {"max": 75, "emoji": "🌟", "badge": "badge-high", "label": "Alto", "title": "Tienes un buen nivel de autoconocimiento", "desc": "Entiendes bien tus emociones, tus valores y tus patrones. Recuerda que cambiamos con el tiempo: seguir observándote con curiosidad, y pedir la mirada de otros de vez en cuando, mantiene ese conocimiento al día."}]};</script>
+<script>(function(){
+  var C = window.QUIZ;
+  var N = C.questions.length;
+  var answers = new Array(N).fill(null);
+  var cur = 0;
+  var wrap = document.getElementById('quizQuestions');
+
+  function esc(s){ return String(s).replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+
+  // Render questions
+  var html = '';
+  C.questions.forEach(function(q, i){
+    var opts = q.opts || C.scale;
+    html += '<div class="question-card' + (i === 0 ? ' active' : '') + '" data-q="' + i + '">' +
+      '<div class="question-num">Pregunta ' + (i + 1) + ' de ' + N + '</div>' +
+      '<div class="question-text">' + esc(q.t) + '</div><div class="options">';
+    opts.forEach(function(o){
+      html += '<button type="button" class="option" data-score="' + o[1] + '"><span class="option-dot"></span>' + esc(o[0]) + '</button>';
+    });
+    html += '</div><div class="nav-btns">' +
+      (i > 0 ? '<button type="button" class="btn-back">← Atrás</button>' : '') +
+      '<button type="button" class="btn-next' + (i === N - 1 ? ' btn-submit' : '') + '">' + (i === N - 1 ? 'Ver mi resultado →' : 'Siguiente →') + '</button>' +
+      '</div></div>';
+  });
+  wrap.innerHTML = html;
+  var cards = wrap.querySelectorAll('.question-card');
+
+  function progress(){
+    var pct = Math.round(cur / N * 100);
+    document.getElementById('progressFill').style.width = pct + '%';
+    document.getElementById('progressText').textContent = 'Pregunta ' + (cur + 1) + ' de ' + N;
+    document.getElementById('progressPct').textContent = pct + '%';
+  }
+  function show(i){
+    cards[cur].classList.remove('active');
+    cur = i;
+    cards[cur].classList.add('active');
+    progress();
+  }
+
+  wrap.addEventListener('click', function(e){
+    var opt = e.target.closest('.option');
+    if (opt) {
+      var card = opt.closest('.question-card');
+      card.querySelectorAll('.option').forEach(function(o){ o.classList.remove('selected'); });
+      opt.classList.add('selected');
+      answers[cur] = Number(opt.getAttribute('data-score'));
+      card.querySelector('.btn-next').classList.add('enabled');
+      return;
+    }
+    if (e.target.closest('.btn-back')) { show(cur - 1); return; }
+    if (e.target.closest('.btn-next')) {
+      if (answers[cur] === null) return;
+      if (cur < N - 1) show(cur + 1); else result();
+    }
+  });
+
+  function score(i){
+    var q = C.questions[i], v = answers[i];
+    if (q.opts) return v;
+    return q.rev ? (C.scaleMax + C.scaleMin - v) : v;
+  }
+
+  function result(){
+    var total = 0;
+    for (var i = 0; i < N; i++) total += score(i);
+    var band = C.bands.filter(function(b){ return total <= b.max; })[0] || C.bands[C.bands.length - 1];
+    var out = '<div class="result-card active">' +
+      '<div class="result-emoji">' + band.emoji + '</div>' +
+      '<div class="result-score">Tu puntuación: ' + total + ' de ' + C.totalMax + '</div>' +
+      '<div class="result-type">' + esc(band.title) + '</div>' +
+      '<div class="result-badge ' + band.badge + '">' + esc(band.label) + '</div>' +
+      '<div class="result-desc">' + band.desc + '</div>';
+
+    if (C.dims) {
+      var dimScores = Object.keys(C.dims).map(function(k){
+        var idx = [], s = 0;
+        C.questions.forEach(function(q, i){ if (q.d === k) { idx.push(i); s += score(i); } });
+        var min = idx.length * C.scaleMin, max = idx.length * C.scaleMax;
+        return { k: k, pct: Math.round((s - min) / (max - min) * 100) };
+      });
+      out += '<div class="dim-bars"><h3>' + esc(C.dimsTitle) + '</h3>';
+      dimScores.forEach(function(d){
+        out += '<div class="dim-row"><div class="dim-label"><span>' + esc(C.dims[d.k].name) + '</span><span>' + d.pct + '%</span></div>' +
+          '<div class="dim-bar"><div class="dim-fill" style="width:' + d.pct + '%"></div></div></div>';
+      });
+      out += '</div>';
+      var low = dimScores.slice().sort(function(a, b){ return a.pct - b.pct; }).slice(0, 2);
+      out += '<div class="result-tips"><h3>' + esc(C.tipsTitle) + '</h3>';
+      low.forEach(function(d){
+        var dim = C.dims[d.k];
+        out += '<h4>' + esc(dim.name) + '</h4><ul>' + dim.tips.map(function(t){ return '<li>' + t + '</li>'; }).join('') + '</ul>';
+      });
+      out += '</div>';
+    } else if (band.tips) {
+      out += '<div class="result-tips"><h3>' + esc(band.tipsTitle) + '</h3><ul>' + band.tips.map(function(t){ return '<li>' + t + '</li>'; }).join('') + '</ul></div>';
+    }
+
+    out += '<div class="result-cta"><h3>' + esc(C.ctaTitle) + '</h3><p>' + esc(C.ctaText) + '</p>' +
+      '<a href="https://apps.apple.com/us/app/soulcue-ai-growth-coach/id6754840010?utm_source=quiz&utm_medium=' + C.id + '-' + band.badge + '&utm_campaign=download" class="btn-download" target="_blank" rel="noopener">Descargar SoulCue gratis</a>' +
+      '<button type="button" class="btn-retake">Repetir el test</button></div>' +
+      '<p class="result-note">Este test es una herramienta de reflexión personal, no una evaluación psicológica ni un diagnóstico.</p></div>';
+
+    wrap.style.display = 'none';
+    document.getElementById('progressWrap').style.display = 'none';
+    var rs = document.getElementById('resultSection');
+    rs.innerHTML = out;
+    rs.style.display = 'block';
+    rs.querySelector('.btn-retake').addEventListener('click', retake);
+    window.scrollTo({ top: document.querySelector('.quiz-wrap').offsetTop - 80, behavior: 'smooth' });
+    if (typeof gtag !== 'undefined') gtag('event', 'quiz_completed', { event_label: C.id + ':' + band.badge, value: total });
+  }
+
+  function retake(){
+    answers.fill(null);
+    cards.forEach(function(c){
+      c.classList.remove('active');
+      c.querySelectorAll('.option').forEach(function(o){ o.classList.remove('selected'); });
+      c.querySelector('.btn-next').classList.remove('enabled');
+    });
+    cur = 0; cards[0].classList.add('active'); progress();
+    document.getElementById('resultSection').style.display = 'none';
+    document.getElementById('progressWrap').style.display = 'block';
+    wrap.style.display = 'block';
+    window.scrollTo({ top: document.querySelector('.quiz-wrap').offsetTop - 80, behavior: 'smooth' });
+  }
+
+  progress();
+})();
+</script>
+</body></html>
