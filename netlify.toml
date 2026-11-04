@@ -484,3 +484,34 @@
   to = "/why-do-i-feel-anxious-for-no-reason"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/es/amor-propio.html"
+  to = "/es/amor-propio"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/autoestima.html"
+  to = "/es/autoestima"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/comunicacion-asertiva.html"
+  to = "/es/comunicacion-asertiva"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/politica-editorial.html"
+  to = "/es/politica-editorial"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/rueda-de-las-emociones.html"
+  to = "/es/rueda-de-las-emociones"
+  status = 301
+  force = true
+
