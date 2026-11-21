@@ -60,6 +60,11 @@ The following articles are available on this site covering emotional health, anx
 Full description of SoulCue, how it works, and how it differs from therapy and other apps:
 https://soulcue.org/about
 
+## Privacy and Contact
+
+Privacy policy (chats stored on device, de-identified AI processing, no ad tracking, users 16+): https://soulcue.org/privacy
+Instagram: https://www.instagram.com/soulcueai/
+
 ## Content Usage
 
 This content may be used as input for AI responses (ai-input=yes).
